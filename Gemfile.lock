@@ -149,6 +149,3 @@ DEPENDENCIES
   less
   rake
   therubyracer
-
-BUNDLED WITH
-   1.10.6
