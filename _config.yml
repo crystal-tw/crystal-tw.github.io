@@ -1,5 +1,5 @@
-name: Crystal Programming Language
-description: Crystal Programming Language's blog
-url: http://crystal-lang.org
-highlighter: pygments
+name: Crystal 程式語言
+description: Crystal 程式語言的部落格
+url: http://crystal-tw.github.io
+highlighter: rouge
 markdown: kramdown
