@@ -1,0 +1,25 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+    %title Crystal
+    %link{:href => "/stylesheets/stylesheet.css", :rel => "stylesheet"}
+    %link{:rel => 'alternate', :type => 'application/atom+xml', :title => 'Atom 1.0', :href => '/feed.xml'}
+    %link{:rel => 'icon', :href => "/images/favico.png", :type => "image/png"}
+    %link{:rel => 'shortcut icon', :href => "/images/favico.ico", :type => "image/x-icon"}
+    %script{:src => '/javascripts/viewer.js', :type => 'text/javascript'}
+  %body
+    #fund
+      .inner
+        .badge
+          %a.text{:href => "https://www.bountysource.com/teams/crystal-lang/fundraisers/702-crystal-language", :target => "_blank"} Fund Crystal and help it become production-ready!
+          %a.text{:href => "/sponsors"} Meet our sponsors
+          %a{:href => "https://www.bountysource.com/teams/crystal-lang/fundraisers/702-crystal-language", :target => "_blank"}
+            %img{:src => "https://api.bountysource.com/badge/team?team_id=89730&style=raised"}
+    .wrapper
+      {% include header.html %}
+      {{ content }}
+      {% include footer.html %}
+    {% include google_analytics.html %}
+
+    %script{:src => '/javascripts/main.js', :type => 'text/javascript'}

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -45,3 +46,10 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+=======
+_site
+.bundle
+_book
+vendor/bundle
+.ruby-version
+>>>>>>> 4b77e6711602d9534e828bb6a2f406c490e05973

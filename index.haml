@@ -1,0 +1,66 @@
+\---
+layout: default
+\---
+%section
+  %h1 設計理念
+  %ul.goals
+    %li Ruby 風格語法
+    %li 自動型別推導以及靜態型別檢查
+    %li 容易撰寫 C 函式庫綁紮<small>（Binding）</small>
+    %li 編譯時期展開巨集並產生最佳化程式碼
+    %li 產生高效原生碼
+
+%section
+  %h1 如此這般
+  .code_section
+    {% include sample_code.md %}
+
+%section
+  %h1 開發進度
+  %p
+    %ul.goals
+      %li Crystal 目前仍為 Alpha 階段 —— 語言標準及 stdlib 尚在調整中
+      %li 已完成自舉 —— 現在可以用 Crystal 編譯 Crystal 編譯器了！
+
+%section
+  %h1 社群資源
+  %p
+    對於 Crystal 的問題與討論可以由下面方式取得：
+    %ul.goals
+      %li
+        %a{href: "https://gitter.im/crystal-tw/crystal-tw.github.io", target: "_blank"} Crystal-TW Gitter
+      %li
+        %a{href: "https://groups.google.com/forum/?fromgroups#!forum/crystal-lang", target: "_blank"} 官方 Google Group <small>[英]</small>
+      %li
+        官方 IRC Channel
+        %ul
+          %li #crystal-lang @ irc.freenode.net
+
+%section
+  %h1 關於中文版
+  %p
+    本站正體中文（臺灣）翻譯由社群貢獻，原文為英文。
+    %br
+    與翻譯有關的任何訊息都可以在 Crystal-TW 的 GitHub 頁面上取得。
+  %ul.goals
+    %li
+      %a{href: "https://github.com/crystal-tw/crystal-tw.github.io"}
+        Crystal-TW 正體中文（臺灣）翻譯計劃
+    %li
+      %a{href: "http://crystal-lang.org"}
+        Crystal 原文官方網站 <small>[英]</small>
+
+-#
+  %section
+    %h1 部落格文章
+    %p
+      翻譯進行中……
+    .blog_roll
+      {% for post in site.posts %}
+      %article
+        .thumbnail
+          %p {{ post.thumbnail }}
+        %h3
+          %a{href: "{{post.url}}"} {{ post.title }}
+        %p {{ post.summary }}
+      {% endfor %}
