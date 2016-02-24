@@ -1,32 +1,36 @@
-# On Debian and Ubuntu
+# 在 Debian / Ubuntu 環境中安裝
 
-In Debian derived distributions, you can use the official Crystal repository.
+在 Debian 衍生的發行版下，你可以使用 Crystal 官方的軟體源。
 
-## Setup repository
+## 設定軟體源
 
-First you have to add the repository to your APT configuration. For easy setup just run in your command line:
+首先，你必須在 APT 的設定中加入軟體源，你可以使用下列指令來進行設定：
 
 ```
   curl http://dist.crystal-lang.org/apt/setup.sh | sudo bash
+  
 ```
 
-That will add the signing key and the repository configuration. If you prefer to do it manually execute:
+這將加入簽章金鑰和軟體源的設定。
+
+當然，你也可以手動執行：
 
 ```
 apt-key adv --keyserver keys.gnupg.net --recv-keys 09617FD37CC06B54
 echo "deb http://dist.crystal-lang.org/apt crystal main" > /etc/apt/sources.list.d/crystal.list
 ```
 
-## Install
-Once the repository is configured you're ready to install Crystal:
+## 安裝
+
+當設定完軟體源後，你就可以安裝 Crystal 了：
 
 ```
 sudo apt-get install crystal
 ```
 
-## Upgrade
+## 更新
 
-When a new Crystal version is released you can upgrade your system using:
+當新版的 Crystal 釋出時，你可以使用下列指令來進行更新：
 
 ```
 sudo apt-get update

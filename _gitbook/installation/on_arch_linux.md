@@ -1,8 +1,8 @@
-# On Arch Linux
+# 在 Arch Linux 環境中安裝
 
-Arch Linux includes the Crystal compiler in the Community repository.
+Arch Linux 的 Community 軟體倉庫中包含有 Crystal 的編譯器。
 
-## Install
+## 安裝
 
 ```
 sudo pacman -S crystal
