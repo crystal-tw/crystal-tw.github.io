@@ -1,13 +1,13 @@
 # &&
 
-An `&&` (and) evaluates its left hand side. If it's *truthy*, it evaluates its right hand side and has that value. Otherwise it has the value of the left hand side. Its type is the union of the types of both sides.
+`&&`（且/邏輯與）會檢查左值。若為「**真**」時，會計算並返回右值，反之，為左值。其型別為兩側型別之混合型別。
 
-You can think an `&&` as syntax sugar of an `if`:
+你可以將 `&&` 視為一個 `if` 的語法糖：
 
 ```crystal
 some_exp1 && some_exp2
 
-# The above is the same as:
+# 上面與此等價:
 tmp = some_exp1
 if tmp
   some_exp2
