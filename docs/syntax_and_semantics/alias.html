@@ -36,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="4.7.10" data-basepath=".." data-revision="Tue Feb 23 2016 18:02:56 GMT+0000 (UTC)">
+    <div class="book" data-level="4.7.10" data-basepath=".." data-revision="Wed Feb 24 2016 08:41:49 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1995,14 +1995,14 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="alias">alias</h1>
-<p>With <code>alias</code> you can give a type a different name:</p>
+                        <h1 id="%E5%88%A5%E5%90%8D-alias">&#x5225;&#x540D; (alias)</h1>
+<p>&#x900F;&#x904E; <code>alias</code> &#x6211;&#x5011;&#x53EF;&#x4EE5;&#x8CE6;&#x4E88;&#x578B;&#x5225;&#x4E00;&#x500B;&#x4E0D;&#x540C;&#x7684;&#x540D;&#x5B50;&#xFF1A;</p>
 <pre><code class="lang-crystal"><span class="hljs-keyword">alias</span> <span class="hljs-constant">PInt32</span> = <span class="hljs-constant">Pointer</span>(<span class="hljs-constant">Int32</span>)
 
 ptr = <span class="hljs-constant">PInt32</span>.malloc(<span class="hljs-number">1</span>) <span class="hljs-comment"># :: Pointer(Int32)</span>
 </code></pre>
-<p>Every time you use an alias the compiler replaces it with the type it refers to.</p>
-<p>Aliases are useful to avoid writing long type names, but also to be able to talk about recursive types:</p>
+<p>&#x6BCF;&#x7576;&#x5225;&#x540D;&#x88AB;&#x4F7F;&#x7528;&#x6642;&#xFF0C;&#x7DE8;&#x8B6F;&#x5668;&#x90FD;&#x5C07;&#x5176;&#x66FF;&#x63DB;&#x56DE;&#x539F;&#x4F86;&#x7684;&#x578B;&#x5225;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x5225;&#x540D;&#x4F86;&#x907F;&#x514D;&#x64B0;&#x5BEB;&#x904E;&#x9577;&#x7684;&#x578B;&#x5225;&#x540D;&#x7A31;&#x6642;&#x975E;&#x5E38;&#x65B9;&#x4FBF;&#xFF0C;&#x5225;&#x540D;&#x4E5F;&#x80FD;&#x5920;&#x7528;&#x4F86;&#x63CF;&#x8FF0;&#x905E;&#x8FF4;&#x578B;&#x5225;&#x3002;</p>
 <pre><code class="lang-crystal"><span class="hljs-keyword">alias</span> <span class="hljs-constant">RecArray</span> = <span class="hljs-constant">Array</span>(<span class="hljs-constant">Int32</span>) | <span class="hljs-constant">Array</span>(<span class="hljs-constant">RecArray</span>)
 
 ary = [] <span class="hljs-keyword">of</span> <span class="hljs-constant">RecArray</span>
@@ -2010,7 +2010,7 @@ ary.push [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>
 ary.push ary
 ary <span class="hljs-comment">#=&gt; [[1, 2, 3], [...]]</span>
 </code></pre>
-<p>A real-world example of a recursive type is json:</p>
+<p>Json &#x662F;&#x4E00;&#x500B;&#x5E38;&#x898B;&#x7684;&#x905E;&#x8FF4;&#x578B;&#x5225;&#x7BC4;&#x4F8B;&#xFF1A;</p>
 <pre><code class="lang-crystal"><span class="hljs-class"><span class="hljs-keyword">module</span> <span class="hljs-title">Json</span></span>
   <span class="hljs-keyword">alias</span> <span class="hljs-constant">Type</span> = <span class="hljs-constant">Nil</span> |
                <span class="hljs-constant">Bool</span> |
