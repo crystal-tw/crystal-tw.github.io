@@ -36,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="2" data-basepath=".." data-revision="Tue Feb 23 2016 18:02:56 GMT+0000 (UTC)">
+    <div class="book" data-level="2" data-basepath=".." data-revision="Wed Feb 24 2016 09:19:10 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -75,7 +75,7 @@
                         
                             <b>1.</b>
                         
-                        Installation
+                        安裝
                     </a>
             
             
@@ -91,7 +91,7 @@
                         
                             <b>1.1.</b>
                         
-                        On Debian and Ubuntu
+                        在 Debian / Ubuntu 環境下安裝
                     </a>
             
             
@@ -106,7 +106,7 @@
                         
                             <b>1.2.</b>
                         
-                        On RedHat and CentOS
+                        在 RedHat / CentOS 環境下安裝
                     </a>
             
             
@@ -121,7 +121,7 @@
                         
                             <b>1.3.</b>
                         
-                        On Arch Linux
+                        在 Arch Linux 環境下安裝
                     </a>
             
             
@@ -136,7 +136,7 @@
                         
                             <b>1.4.</b>
                         
-                        On Mac OSX using Homebrew
+                        在 Mac OSX 環境下使用 Homebrew 安裝
                     </a>
             
             
@@ -151,7 +151,7 @@
                         
                             <b>1.5.</b>
                         
-                        From a tar.gz
+                        使用 .tar.gz 檔案安裝
                     </a>
             
             
@@ -166,7 +166,7 @@
                         
                             <b>1.6.</b>
                         
-                        From sources
+                        從原始碼安裝
                     </a>
             
             
@@ -1995,26 +1995,26 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="using-the-compiler">Using the compiler</h1>
-<p>Once you <a href="../installation/index.html">install</a> the compiler you will have a <code>crystal</code> binary at your disposal.</p>
-<p>In the next sections a dollar sign (<code>$</code>) denotes the command line.</p>
-<h2 id="compiling-and-running-at-once">Compiling and running at once</h2>
-<p>To compile and run a program in a single shot you can invoke <code>crystal</code> with a single filename:</p>
+                        <h1 id="%E4%BD%BF%E7%94%A8%E7%B7%A8%E8%AD%AF%E5%99%A8">&#x4F7F;&#x7528;&#x7DE8;&#x8B6F;&#x5668;</h1>
+<p>&#x4E00;&#x65E6;&#x4F60; <a href="../installation/index.html">&#x5B89;&#x88DD;</a> &#x4E86;&#x7DE8;&#x8B6F;&#x5668;&#x4F60;&#x5C31;&#x6709;&#x4E86;&#x500B; <code>crystal</code> &#x4E8C;&#x9032;&#x4F4D;&#x6A94;&#x5728;&#x4F60;&#x7684;&#x914D;&#x7F6E;&#x7576;&#x4E2D;&#x3002;</p>
+<p>&#x5728;&#x63A5;&#x4E0B;&#x4F86;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x9322;&#x5B57;&#x865F; (<code>$</code>) &#x8868;&#x793A;&#x547D;&#x4EE4;&#x5217;&#x3002;</p>
+<h2 id="%E7%B7%A8%E8%AD%AF%E4%B8%A6%E5%9F%B7%E8%A1%8C">&#x7DE8;&#x8B6F;&#x4E26;&#x57F7;&#x884C;</h2>
+<p>&#x60F3;&#x8981;&#x7DE8;&#x8B6F;&#x4E26;&#x4E14;&#x76F4;&#x63A5;&#x57F7;&#x884C;&#x7A0B;&#x5F0F;&#x4F60;&#x53EF;&#x4EE5;&#x57F7;&#x884C; <code>crystal</code> &#x4E26;&#x5728;&#x5F8C;&#x9762;&#x52A0;&#x4E0A;&#x6A94;&#x6848;&#x540D;&#x7A31;:</p>
 <pre><code>$ crystal some_program.cr
-</code></pre><p>Crystal files end with the <code>.cr</code> extension.</p>
-<p>Alternative you can use the <code>run</code> command:</p>
+</code></pre><p>Crystal &#x6A94;&#x6848;&#x4EE5; <code>.cr</code> &#x4F5C;&#x70BA;&#x526F;&#x6A94;&#x540D;&#x3002;</p>
+<p>&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>run</code> :</p>
 <pre><code>$ crystal run some_program.cr
-</code></pre><h2 id="creating-an-executable">Creating an executable</h2>
-<p>To create an executable use the <code>build</code> command:</p>
+</code></pre><h2 id="%E7%94%A2%E7%94%9F%E4%B8%80%E5%80%8B%E5%9F%B7%E8%A1%8C%E6%AA%94">&#x7522;&#x751F;&#x4E00;&#x500B;&#x57F7;&#x884C;&#x6A94;</h2>
+<p>&#x4F7F;&#x7528; <code>build</code> &#x547D;&#x4EE4;&#x7522;&#x751F;&#x4E00;&#x500B;&#x57F7;&#x884C;&#x6A94;:</p>
 <pre><code>$ crystal build some_program.cr
-</code></pre><p>This will create a <code>some_program</code> file that you can execute:</p>
+</code></pre><p>&#x9019;&#x6703;&#x7522;&#x751F;&#x4E00;&#x500B;&#x53EF;&#x4F9B;&#x57F7;&#x884C;&#x7684; <code>some_program</code> &#x6A94;&#x6848;:</p>
 <pre><code>$ ./some_program
-</code></pre><p><strong>Note:</strong> By default the generated executables <strong>are not fully optimized</strong>. To turn optimizations on, use the <code>--release</code> flag:</p>
+</code></pre><p><strong>&#x6CE8;&#x610F; :</strong> &#x5728;&#x9810;&#x8A2D;&#x60C5;&#x6CC1;&#x4E0B;&#x7522;&#x751F;&#x7684;&#x57F7;&#x884C;&#x6A94; <strong>&#x4E26;&#x6C92;&#x6709;&#x88AB;&#x5B8C;&#x5168;&#x512A;&#x5316;</strong>&#x3002; &#x4F7F;&#x7528; <code>--release</code> &#x53C3;&#x6578;&#x4F86;&#x555F;&#x7528;&#x512A;&#x5316;&#x529F;&#x80FD;:</p>
 <pre><code>$ crystal build some_program.cr --release
-</code></pre><p>Make sure to always use <code>--release</code> for production-ready executables and when performing benchmarks.</p>
-<p>The reason for this is that performance without full optimizations is still pretty good and provides fast compile times, so you can use the <code>crystal</code> command almost as if it were an interpreter.</p>
-<h2 id="creating-a-project-or-library">Creating a project or library</h2>
-<p>Use the <code>init</code> command to create a Crystal project with the standard directory structure.</p>
+</code></pre><p>&#x78BA;&#x4FDD;&#x5728;&#x7DE8;&#x8B6F;&#x6E96;&#x5099;&#x767C;&#x884C;( production-ready )&#x7684;&#x57F7;&#x884C;&#x6A94;&#x53CA;&#x8A55;&#x6548;( benchmarks )&#x6642;&#x6BCF;&#x6B21;&#x90FD;&#x6709;&#x4F7F;&#x7528; <code>--release</code>&#x3002;</p>
+<p>&#x9019;&#x9EBC;&#x505A;&#x7684;&#x539F;&#x56E0;&#x662F;&#x56E0;&#x70BA;&#x5C31;&#x7B97;&#x6C92;&#x6709;&#x5B8C;&#x5168;&#x512A;&#x5316;&#xFF0C;&#x5B83;&#x7684;&#x8868;&#x73FE;&#x9084;&#x662F;&#x975E;&#x5E38;&#x597D;&#x800C;&#x4E14;&#x7DE8;&#x8B6F;&#x7684;&#x8F03;&#x5FEB;&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x53EF;&#x4EE5;&#x50CF;&#x4F7F;&#x7528;&#x76F4;&#x8B6F;&#x5668;&#x4E00;&#x6A23;&#x4F7F;&#x7528; <code>crystal</code> &#x547D;&#x4EE4;&#x3002;</p>
+<h2 id="%E7%94%A2%E7%94%9F%E4%B8%80%E5%80%8B%E5%B0%88%E6%A1%88%E6%88%96%E6%98%AF%E5%87%BD%E5%BC%8F%E5%BA%AB">&#x7522;&#x751F;&#x4E00;&#x500B;&#x5C08;&#x6848;&#x6216;&#x662F;&#x51FD;&#x5F0F;&#x5EAB;</h2>
+<p>&#x4F7F;&#x7528; <code>init</code> &#x547D;&#x4EE4;&#x4F86;&#x7522;&#x751F;&#x4E00;&#x500B;&#x64C1;&#x6709;&#x6A19;&#x6E96;&#x76EE;&#x9304;&#x7D50;&#x69CB;&#x7684; Crystal &#x5C08;&#x6848;&#x3002;</p>
 <pre><code>$ crystal init lib MyCoolLib
       create  MyCoolLib/.gitignore
       create  MyCoolLib/LICENSE
@@ -2026,8 +2026,8 @@
       create  MyCoolLib/spec/spec_helper.cr
       create  MyCoolLib/spec/MyCoolLib_spec.cr
 Initialized empty Git repository in ~/MyCoolLib/.git/
-</code></pre><h2 id="other-commands-and-options">Other commands and options</h2>
-<p>To see the full set of commands, invoke <code>crystal</code> without arguments.</p>
+</code></pre><h2 id="%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4%E5%8F%8A%E9%81%B8%E9%A0%85">&#x5176;&#x4ED6;&#x547D;&#x4EE4;&#x53CA;&#x9078;&#x9805;</h2>
+<p>&#x8F38;&#x5165;  <code>crystal</code> &#x4E26;&#x4E14;&#x4E0D;&#x52A0;&#x4E0A;&#x4EFB;&#x4F55;&#x53C3;&#x6578;&#x4F86;&#x700F;&#x89BD;&#x6240;&#x6709;&#x53EF;&#x7528;&#x7684;&#x547D;&#x4EE4;:</p>
 <pre><code>$ crystal
 Usage: crystal [command] [switches] [program file] [--] [arguments]
 
@@ -2042,7 +2042,7 @@ Command:
     tool                     run a tool
     --help, -h               show this help
     --version, -v            show version
-</code></pre><p>To see the available options for a particuar command, use <code>--help</code> after a command:</p>
+</code></pre><p>&#x5728;&#x547D;&#x4EE4;&#x5F8C;&#x4F7F;&#x7528; <code>--help</code> &#x4F86;&#x67E5;&#x770B;&#x8A72;&#x547D;&#x4EE4;&#x6240;&#x6709;&#x53EF;&#x7528;&#x7684;&#x9078;&#x9805;:</p>
 <pre><code>$ crystal build --help
 Usage: crystal build [options] [programfile] [--] [arguments]
 
@@ -2075,7 +2075,7 @@ Options:
         </div>
 
         
-        <a href="../installation/from_source_repository.html" class="navigation navigation-prev " aria-label="Previous page: From sources"><i class="fa fa-angle-left"></i></a>
+        <a href="../installation/from_source_repository.html" class="navigation navigation-prev " aria-label="Previous page: 從原始碼安裝"><i class="fa fa-angle-left"></i></a>
         
         
         <a href="../overview/index.html" class="navigation navigation-next " aria-label="Next page: Overview and Examples"><i class="fa fa-angle-right"></i></a>
