@@ -1,3 +1,3 @@
-# Syntax and Semantics
+# 語法及語意
 
-The program’s source code must be encoded in UTF-8.
+程式的原始碼必須要是UTF-8編碼

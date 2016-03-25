@@ -36,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="3.2" data-basepath=".." data-revision="Thu Feb 25 2016 17:32:11 GMT+0000 (UTC)">
+    <div class="book" data-level="3.2" data-basepath=".." data-revision="Fri Feb 26 2016 04:29:47 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2016,16 +2016,15 @@ server.listen
 </code></pre></li>
 </ul>
 <ul>
-<li>&#x4F60;&#x53EF;&#x4EE5;&#x547C;&#x53EB;&#x7269;&#x4EF6;&#x7684;<a href="../syntax_and_semantics/classes_and_methods.html">&#x65B9;&#x6CD5;</a> ( &#x6216;&#x50B3;&#x9001;&#x8A0A;&#x606F; )&#x4F86;&#x64B0;&#x5BEB;&#x7A0B;&#x5F0F;:</li>
-</ul>
-<pre><code>    HTTP::Server.new(8000) ...
-    ...
-    Time.now
-    ...
-    puts &quot;Listening on http://0.0.0.0:8080&quot;
-    ...
-    server.listen
-</code></pre><ul>
+<li><p>&#x4F60;&#x53EF;&#x4EE5;&#x547C;&#x53EB;&#x7269;&#x4EF6;&#x7684;<a href="../syntax_and_semantics/classes_and_methods.html">&#x65B9;&#x6CD5;</a> ( &#x6216;&#x50B3;&#x9001;&#x8A0A;&#x606F; )&#x4F86;&#x64B0;&#x5BEB;&#x7A0B;&#x5F0F;:</p>
+<pre><code>  HTTP::Server.new(8000) ...
+  ...
+  Time.now
+  ...
+  puts &quot;Listening on http://0.0.0.0:8080&quot;
+  ...
+  server.listen
+</code></pre></li>
 <li><p>&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<a href="../syntax_and_semantics/blocks_and_procs.html">&#x5340;&#x584A;&#x78BC;( blocks )</a>&#xFF0C;&#x800C;&#x9019;&#x662F;&#x500B;&#x91CD;&#x8907;&#x5229;&#x7528;&#x7A0B;&#x5F0F;&#x78BC;&#x7684;&#x597D;&#x65B9;&#x6CD5;&#x4E5F;&#x662F;&#x51FD;&#x5F0F;&#x5316;&#x7684;&#x7279;&#x8272;&#x4E4B;&#x4E00;&#x3002;</p>
 <pre><code>  HTTP::Server.new(8080) do |request|
     ...
