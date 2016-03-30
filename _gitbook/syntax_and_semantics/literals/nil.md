@@ -1,6 +1,6 @@
 # Nil
 
-The [Nil](http://crystal-lang.org/api/Nil.html) type has only one possible value:
+[ Nil (空值) ](http://crystal-lang.org/api/Nil.html) 型態只可能有一個值
 
 ```crystal
 nil
