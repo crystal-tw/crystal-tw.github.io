@@ -1,13 +1,12 @@
 # 整數
-  		  
+
 Crystal 中有四種有號整數型態:[Int8](http://crystal-lang.org/api/Int8.html), [Int16](http://crystal-lang.org/api/Int16.html), [Int32](http://crystal-lang.org/api/Int32.html) 和 [Int64](http://crystal-lang.org/api/Int64.html), 能夠分別表示 8, 16, 32, 和 64 位元的數字。
-  		  
+
  還有四種無號整數型態: [UInt8](http://crystal-lang.org/api/UInt8.html), [UInt16](http://crystal-lang.org/api/UInt16.html), [UInt32](http://crystal-lang.org/api/UInt32.html) 和 [UInt64](http://crystal-lang.org/api/UInt64.html).
-  		  
+
  整數常數由正負號、數字、底線( 純修飾 )、後綴文字( 指定型態 )組成，
  其中正號、底線及後綴可省略。
  如果沒有標註後綴，則 Crystal 會由大到小尋找找可以匹配的型態:
- 	
 
 ```crystal
 1      # Int32
