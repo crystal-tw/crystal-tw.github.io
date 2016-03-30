@@ -36,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="4.6.2.2" data-basepath=".." data-revision="Wed Feb 24 2016 09:19:10 GMT+0000 (UTC)">
+    <div class="book" data-level="4.6.2.2" data-basepath=".." data-revision="Wed Mar 30 2016 14:20:19 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -60,7 +60,7 @@
                 
                         <i class="fa fa-check"></i>
                         
-                        Introduction
+                        簡介
                     </a>
             
             
@@ -186,7 +186,7 @@
                         
                             <b>2.</b>
                         
-                        Using the compiler
+                        使用編譯器
                     </a>
             
             
@@ -201,7 +201,7 @@
                         
                             <b>3.</b>
                         
-                        Overview and Examples
+                        概要
                     </a>
             
             
@@ -232,7 +232,7 @@
                         
                             <b>3.2.</b>
                         
-                        HTTP Server
+                        HTTP伺服器
                     </a>
             
             
@@ -252,7 +252,7 @@
                         
                             <b>4.</b>
                         
-                        Syntax and semantics
+                        語法及語意
                     </a>
             
             
@@ -268,7 +268,7 @@
                         
                             <b>4.1.</b>
                         
-                        Comments
+                        註解
                     </a>
             
             
@@ -283,7 +283,7 @@
                         
                             <b>4.2.</b>
                         
-                        Literals
+                        常值
                     </a>
             
             
@@ -1995,8 +1995,8 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="as-an-expression">As an expression</h1>
-<p>The value of an <code>if</code> is the value of the last expression found in each of its branches:</p>
+                        <h1 id="%E4%BD%9C%E7%82%BA%E8%A1%A8%E9%81%94%E5%BC%8F%E6%99%82">&#x4F5C;&#x70BA;&#x8868;&#x9054;&#x5F0F;&#x6642;</h1>
+<p><code>if</code> &#x7684;&#x56DE;&#x50B3;&#x503C;&#x662F;&#x5728;&#x5404;&#x9805;&#x5206;&#x652F;&#x4E2D;&#x6700;&#x5F8C;&#x4E00;&#x500B;&#x767C;&#x73FE;&#x7684;&#x8868;&#x9054;&#x5F0F;&#x7684;&#x503C;&#xFF1A;</p>
 <pre><code class="lang-crystal">a = <span class="hljs-keyword">if</span> <span class="hljs-number">2</span> &gt; <span class="hljs-number">1</span>
       <span class="hljs-number">3</span>
     <span class="hljs-keyword">else</span>
@@ -2004,25 +2004,25 @@
     <span class="hljs-keyword">end</span>
 a <span class="hljs-comment">#=&gt; 3</span>
 </code></pre>
-<p>If an <code>if</code> branch is empty, or it&#x2019;s missing, it&#x2019;s considered as if it had <code>nil</code> in it:</p>
+<p>&#x5982;&#x679C; <code>if</code> &#x7684;&#x5206;&#x652F;&#x662F;&#x7A7A;&#x7684;&#xFF0C;&#x6216;&#x662F;&#x7F3A;&#x4E4F;&#x5206;&#x652F;&#xFF0C;&#x6703;&#x88AB;&#x8996;&#x70BA; <code>nil</code>&#xFF1A;</p>
 <pre><code class="lang-crystal"><span class="hljs-keyword">if</span> <span class="hljs-number">1</span> &gt; <span class="hljs-number">2</span>
   <span class="hljs-number">3</span>
 <span class="hljs-keyword">end</span>
 
-<span class="hljs-comment"># The above is the same as:</span>
+<span class="hljs-comment"># &#x4E0A;&#x65B9;&#x7B49;&#x50F9;&#x65BC;&#xFF1A;</span>
 <span class="hljs-keyword">if</span> <span class="hljs-number">1</span> &gt; <span class="hljs-number">2</span>
   <span class="hljs-number">3</span>
 <span class="hljs-keyword">else</span>
   <span class="hljs-literal">nil</span>
 <span class="hljs-keyword">end</span>
 
-<span class="hljs-comment"># Another example:</span>
+<span class="hljs-comment"># &#x53E6;&#x4E00;&#x500B;&#x7BC4;&#x4F8B;&#xFF1A;</span>
 <span class="hljs-keyword">if</span> <span class="hljs-number">1</span> &gt; <span class="hljs-number">2</span>
 <span class="hljs-keyword">else</span>
   <span class="hljs-number">3</span>
 <span class="hljs-keyword">end</span>
 
-<span class="hljs-comment"># The above is the same as:</span>
+<span class="hljs-comment"># &#x4E0A;&#x65B9;&#x7B49;&#x50F9;&#x65BC; :</span>
 <span class="hljs-keyword">if</span> <span class="hljs-number">1</span> &gt; <span class="hljs-number">2</span>
   <span class="hljs-literal">nil</span>
 <span class="hljs-keyword">else</span>

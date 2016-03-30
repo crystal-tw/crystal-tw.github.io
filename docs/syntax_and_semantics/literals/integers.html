@@ -36,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="4.2.3" data-basepath="../.." data-revision="Wed Feb 24 2016 09:19:10 GMT+0000 (UTC)">
+    <div class="book" data-level="4.2.3" data-basepath="../.." data-revision="Wed Mar 30 2016 14:20:19 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -60,7 +60,7 @@
                 
                         <i class="fa fa-check"></i>
                         
-                        Introduction
+                        簡介
                     </a>
             
             
@@ -186,7 +186,7 @@
                         
                             <b>2.</b>
                         
-                        Using the compiler
+                        使用編譯器
                     </a>
             
             
@@ -201,7 +201,7 @@
                         
                             <b>3.</b>
                         
-                        Overview and Examples
+                        概要
                     </a>
             
             
@@ -232,7 +232,7 @@
                         
                             <b>3.2.</b>
                         
-                        HTTP Server
+                        HTTP伺服器
                     </a>
             
             
@@ -252,7 +252,7 @@
                         
                             <b>4.</b>
                         
-                        Syntax and semantics
+                        語法及語意
                     </a>
             
             
@@ -268,7 +268,7 @@
                         
                             <b>4.1.</b>
                         
-                        Comments
+                        註解
                     </a>
             
             
@@ -283,7 +283,7 @@
                         
                             <b>4.2.</b>
                         
-                        Literals
+                        常值
                     </a>
             
             
@@ -1995,13 +1995,12 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="integers">Integers</h1>
-<p>There are four signed integer types: <a href="http://crystal-lang.org/api/Int8.html" target="_blank">Int8</a>, <a href="http://crystal-lang.org/api/Int16.html" target="_blank">Int16</a>, <a href="http://crystal-lang.org/api/Int32.html" target="_blank">Int32</a> and <a href="http://crystal-lang.org/api/Int64.html" target="_blank">Int64</a>, being able to represent numbers of 8, 16, 32 and 64 bits respectively.</p>
-<p>There are four unsigned integer types: <a href="http://crystal-lang.org/api/UInt8.html" target="_blank">UInt8</a>, <a href="http://crystal-lang.org/api/UInt16.html" target="_blank">UInt16</a>, <a href="http://crystal-lang.org/api/UInt32.html" target="_blank">UInt32</a> and <a href="http://crystal-lang.org/api/UInt64.html" target="_blank">UInt64</a>.</p>
-<p>An integer literal is an optional <code>+</code> or <code>-</code> sign, followed by
-a sequence of digits and underscores, optionally followed by a suffix.
-If no suffix is present, the literal&apos;s type is the lowest between <code>Int32</code>, <code>Int64</code> and <code>UInt64</code>
-in which the number fits:</p>
+                        <h1 id="%E6%95%B4%E6%95%B8">&#x6574;&#x6578;</h1>
+<p>&#x6709;4&#x7A2E;&#x6709;&#x865F;&#x6574;&#x6578;: <a href="http://crystal-lang.org/api/Int8.html" target="_blank">Int8</a>&#x3001;<a href="http://crystal-lang.org/api/Int16.html" target="_blank">Int16</a>&#x3001;<a href="http://crystal-lang.org/api/Int32.html" target="_blank">Int32</a> &#x53CA; <a href="http://crystal-lang.org/api/Int64.html" target="_blank">Int64</a>&#xFF0C;&#x53EF;&#x4EE5;&#x5206;&#x5225;&#x8868;&#x793A;8&#x3001;16&#x3001;32&#x548C;64&#x4F4D;&#x5143;&#x3002;</p>
+<p>&#x9084;&#x6709;4&#x7A2E;&#x7121;&#x865F;&#x6574;&#x6578;: <a href="http://crystal-lang.org/api/UInt8.html" target="_blank">UInt8</a>&#x3001;<a href="http://crystal-lang.org/api/UInt16.html" target="_blank">UInt16</a>&#x3001;<a href="http://crystal-lang.org/api/UInt32.html" target="_blank">UInt32</a> &#x53CA; <a href="http://crystal-lang.org/api/UInt64.html" target="_blank">UInt64</a>&#x3002;</p>
+<p>&#x6574;&#x6578;&#x5E38;&#x503C;&#x53EF;&#x9078;&#x64C7;&#x6027;&#x5E36;&#x6709; <code>+</code> &#x6216; <code>-</code> &#x865F;&#xFF0C;&#x63A5;&#x8457;&#x662F;&#x4E00;&#x9023;&#x4E32;&#x7684;&#x6578;&#x5B57;&#x548C;&#x5E95;&#x7DDA;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x52A0;&#x4E0A;&#x5F8C;&#x7DB4;&#x3002;
+&#x82E5;&#x7121;&#x5F8C;&#x7DB4;&#xFF0C;&#x8A72;&#x5E38;&#x503C;&#x7684;&#x578B;&#x5225;&#x70BA; <code>Int32</code>&#x3001;<code>Int64</code> &#x6216; <code>UInt64</code> &#x6700;&#x4F4E;&#x8005;&#x3002;
+&#x6578;&#x5B57;&#x7B26;&#x5408;&#x4EE5;&#x4E0B;&#x898F;&#x5247;:</p>
 <pre><code class="lang-crystal"><span class="hljs-number">1</span>      <span class="hljs-comment"># Int32</span>
 
 <span class="hljs-number">1_</span>i8   <span class="hljs-comment"># Int8</span>
@@ -2020,17 +2019,17 @@ in which the number fits:</p>
 <span class="hljs-number">2147483648</span>          <span class="hljs-comment"># Int64</span>
 <span class="hljs-number">9223372036854775808</span> <span class="hljs-comment"># UInt64</span>
 </code></pre>
-<p>The underscore <code>_</code> before the suffix is optional.</p>
-<p>Underscores can be used to make some numbers more readable:</p>
-<pre><code class="lang-crystal"><span class="hljs-number">1_000_000</span> <span class="hljs-comment"># better than 1000000</span>
+<p>&#x5E95;&#x7DDA; <code>_</code> &#x53EF;&#x88AB;&#x52A0;&#x65BC;&#x5F8C;&#x7DB4;&#x524D;&#x65B9;&#x3002;</p>
+<p>&#x5E95;&#x7DDA;&#x53EF;&#x7528;&#x65BC;&#x8B93;&#x6578;&#x5B57;&#x66F4;&#x6709;&#x53EF;&#x8B80;&#x6027;:</p>
+<pre><code class="lang-crystal"><span class="hljs-number">1_000_000</span> <span class="hljs-comment"># &#x512A;&#x65BC; 1000000</span>
 </code></pre>
-<p>Binary numbers start with <code>0b</code>:</p>
+<p>&#x4E8C;&#x9032;&#x4F4D;&#x6578;&#x5B57;&#x4EE5; <code>0b</code> &#x958B;&#x59CB;:</p>
 <pre><code class="lang-crystal"><span class="hljs-number">0b1101</span> <span class="hljs-comment"># == 13</span>
 </code></pre>
-<p>Octal numbers start with a <code>0o</code>:</p>
+<p>&#x516B;&#x9032;&#x4F4D;&#x6578;&#x5B57;&#x4EE5; <code>0o</code>&#x958B;&#x59CB;:</p>
 <pre><code class="lang-crystal"><span class="hljs-number">0o123</span> <span class="hljs-comment"># == 83</span>
 </code></pre>
-<p>Hexadecimal numbers start with <code>0x</code>:</p>
+<p>&#x5341;&#x516D;&#x9032;&#x4F4D;&#x6578;&#x5B57;&#x4EE5; <code>0x</code>&#x958B;&#x59CB;:</p>
 <pre><code class="lang-crystal"><span class="hljs-number">0xFE012D</span> <span class="hljs-comment"># == 16646445</span>
 <span class="hljs-number">0xfe012d</span> <span class="hljs-comment"># == 16646445</span>
 </code></pre>
