@@ -1,5 +1,26 @@
 name: Crystal 程式語言
-description: Crystal 程式語言的部落格
+description: Ruby 風格但可編譯的程式語言
 url: http://crystal-tw.github.io
+logo: /images/crystal-h.png
+defaults:
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      image: /images/icon.png
+      layout: default
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      image: /images/icon.png
+      layout: post
+#twitter:
+#  username: CrystalLanguage
 highlighter: rouge
 markdown: kramdown
+exclude: ["*.haml", "Gemfile", "Gemfile.lock", "Rakefile", "travis-build.sh", "scripts/*.cr"]
+gems:
+  - jekyll-seo-tag

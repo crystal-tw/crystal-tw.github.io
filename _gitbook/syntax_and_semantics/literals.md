@@ -1,3 +1,3 @@
-# Literals
+# 常值
 
-Several literals are available for creating many basic types in the language.
+語言中有數個常值可用來表達基本型別
