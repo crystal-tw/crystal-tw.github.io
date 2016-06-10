@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Type inference (part 1)
 thumbnail: x=
 summary: How type inference works
@@ -8,7 +7,7 @@ author: bcardiff
 
 Type inference is a feature every programmer should love. It keep the programmer out of specifying types in the code, and is just so nice.
 
-Here we try to explain the basis on how Crystal infers types of a program. Also aim for a little documentation on how to understand the [type_inference](https://github.com/manastech/crystal/blob/master/src/compiler/crystal/type_inference.cr).
+Here we try to explain the basis on how Crystal infers types of a program. Also aim for a little documentation on how to understand the [type_inference](https://github.com/crystal-lang/crystal/blob/master/src/compiler/crystal/type_inference.cr).
 
 Like most type inference algorithms, the explanation is guided by the AST. Each AST node will have an associated type which corresponds to the type of the expression.
 
@@ -19,8 +18,8 @@ The whole program AST is traversed while the type inference binds AST nodes in o
 These are easy. Booleans, numbers, chars and values that are explicitly written have the type determined directly by syntax.
 
 {% highlight ruby %}
-true # :: Boolean
-1    # :: Int32
+true # : Boolean
+1    # : Int32
 {% endhighlight ruby %}
 
 **Variables**
