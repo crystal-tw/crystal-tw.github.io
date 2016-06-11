@@ -2,6 +2,22 @@
 
 所有原文都來自 [Crystal 原文官方網站](http://crystal-lang.org)，由大家貢獻至 `translation` 分支後，由 Travis CI 機器人協助編譯成 html 格式並合併回 `master`。
 
+## 協助翻譯
+
+目前所有的討論都會在 [GitHub Issue Tracker](https://github.com/crystal-tw/crystal-tw.github.io/issues) 或 [Gitter](https://gitter.im/crystal-tw/crystal-tw.github.io) 上進行。
+
+另外，雖然目前沒有強制規範的規則，但為了確保閱讀順暢，翻譯前請先閱讀已經翻譯好的部分以熟悉慣例，部分規則可以參考[中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)。
+
+### 已知慣例
+
+雖然慣例僅僅只是慣例，但這邊還是整理出一些大家比較容易掌握的要點：
+
+* 文字中若需補充原文可以使用 `<small>` 標籤，如：
+
+```
+# 字串 <small>String</small>
+```
+
 ## 翻譯進度
 
 ### Blog
@@ -30,7 +46,7 @@
        * [x] [整數 (Integers)](_gitbook/syntax_and_semantics/literals/integers.md)
        * [x] [浮點數 (Floats)](_gitbook/syntax_and_semantics/literals/floats.md)
        * [x] [字元 (Char)](_gitbook/syntax_and_semantics/literals/char.md)
-       * [ ] [String](_gitbook/syntax_and_semantics/literals/string.md)
+       * [x] [字串 (String)](_gitbook/syntax_and_semantics/literals/string.md)
        * [ ] [Symbol](_gitbook/syntax_and_semantics/literals/symbol.md)
        * [ ] [Array](_gitbook/syntax_and_semantics/literals/array.md)
        * [ ] [Hash](_gitbook/syntax_and_semantics/literals/hash.md)
