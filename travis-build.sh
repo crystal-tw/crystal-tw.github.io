@@ -13,6 +13,6 @@ git remote add upstream "https://$GH_TOKEN@github.com/crystal-tw/crystal-tw.gith
 git fetch upstream
 git reset upstream/master
 
-git add -A docs/
+git add -fA docs/
 git commit -m "rebuild docs at ${rev} [ci skip]" || true
 git push -q upstream HEAD:master

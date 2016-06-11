@@ -2,6 +2,7 @@ _site
 .bundle
 _book
 vendor/bundle
+/docs
 .ruby-version
 .crystal
 .sass-cache
