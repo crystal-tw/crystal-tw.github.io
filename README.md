@@ -49,7 +49,7 @@
        * [x] [字串 (String)](_gitbook/syntax_and_semantics/literals/string.md)
        * [x] [符號 (Symbol)](_gitbook/syntax_and_semantics/literals/symbol.md)
        * [x] [陣列 (Array)](_gitbook/syntax_and_semantics/literals/array.md)
-       * [ ] [Hash](_gitbook/syntax_and_semantics/literals/hash.md)
+       * [x] [雜湊 (Hash)](_gitbook/syntax_and_semantics/literals/hash.md)
        * [ ] [Range](_gitbook/syntax_and_semantics/literals/range.md)
        * [ ] [Regex](_gitbook/syntax_and_semantics/literals/regex.md)
        * [ ] [Tuple](_gitbook/syntax_and_semantics/literals/tuple.md)
