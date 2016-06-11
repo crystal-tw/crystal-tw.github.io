@@ -47,7 +47,7 @@
        * [x] [浮點數 (Floats)](_gitbook/syntax_and_semantics/literals/floats.md)
        * [x] [字元 (Char)](_gitbook/syntax_and_semantics/literals/char.md)
        * [x] [字串 (String)](_gitbook/syntax_and_semantics/literals/string.md)
-       * [ ] [Symbol](_gitbook/syntax_and_semantics/literals/symbol.md)
+       * [x] [符號 (Symbol)](_gitbook/syntax_and_semantics/literals/symbol.md)
        * [ ] [Array](_gitbook/syntax_and_semantics/literals/array.md)
        * [ ] [Hash](_gitbook/syntax_and_semantics/literals/hash.md)
        * [ ] [Range](_gitbook/syntax_and_semantics/literals/range.md)
