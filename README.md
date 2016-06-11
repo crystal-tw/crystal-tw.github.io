@@ -1,6 +1,6 @@
 # Crystal 官方網站的正體中文（臺灣）翻譯計劃
 
-所有原文都來自 [Crystal 原文官方網站](http://crystal-lang.org)，由大家貢獻至 `translation` 分支後，再合併回 `master` 並由 Travis CI 機器人協助編譯成 html 格式。
+所有原文都來自 [Crystal 原文官方網站](http://crystal-lang.org)，由大家貢獻至 `translation` 分支後，由 Travis CI 機器人協助編譯成 html 格式並合併回 `master`。
 
 ## 翻譯進度
 
@@ -25,11 +25,11 @@
 * [x] [語法及語意](_gitbook/syntax_and_semantics/README.md)
    * [x] [註解](_gitbook/syntax_and_semantics/comments.md)
    * [x] [常值](_gitbook/syntax_and_semantics/literals.md)
-       * [x] [空值 (_gitbook/Nil)](_gitbook/syntax_and_semantics/literals/nil.md)
-       * [x] [布林值 (_gitbook/Bool)](_gitbook/syntax_and_semantics/literals/bool.md)
-       * [x] [整數 (_gitbook/Integers)](_gitbook/syntax_and_semantics/literals/integers.md)
-       * [x] [浮點數 (_gitbook/Floats)](_gitbook/syntax_and_semantics/literals/floats.md)
-       * [x] [字元 (_gitbook/Char)](_gitbook/syntax_and_semantics/literals/char.md)
+       * [x] [空值 (Nil)](_gitbook/syntax_and_semantics/literals/nil.md)
+       * [x] [布林值 (Bool)](_gitbook/syntax_and_semantics/literals/bool.md)
+       * [x] [整數 (Integers)](_gitbook/syntax_and_semantics/literals/integers.md)
+       * [x] [浮點數 (Floats)](_gitbook/syntax_and_semantics/literals/floats.md)
+       * [x] [字元 (Char)](_gitbook/syntax_and_semantics/literals/char.md)
        * [ ] [String](_gitbook/syntax_and_semantics/literals/string.md)
        * [ ] [Symbol](_gitbook/syntax_and_semantics/literals/symbol.md)
        * [ ] [Array](_gitbook/syntax_and_semantics/literals/array.md)
