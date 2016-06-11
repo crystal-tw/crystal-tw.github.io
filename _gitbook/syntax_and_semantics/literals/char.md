@@ -1,9 +1,8 @@
-# 字元
+# 字元 <small>Char</small>
 
-[字元(Char)](http://crystal-lang.org/api/Char.html) 表達一個 [萬國碼(Unicode)](http://zh.wikipedia.org/wiki/Unicode) [編碼位置(code point)](https://zh.wikipedia.org/wiki/碼位)。
-它佔用 32 位元。
+字元 ([Char](http://crystal-lang.org/api/Char.html)) 表達一個 [萬國碼 (Unicode)](http://zh.wikipedia.org/wiki/Unicode) 的[編碼位置 (code point)](https://zh.wikipedia.org/wiki/碼位)。以二進位表達時佔用 32 位元。
 
-它是由被單引號所夾住的 UTF-8 字元所創造。
+以一對單引號來括住一個 UTF-8 文字來表達一個字元。
 
 ```crystal
 'a'
@@ -13,7 +12,7 @@
 'あ'
 ```
 
-你可以使用反斜線(backslash)表示某些字元:
+你可以使用反斜線（`\`）表示某些字元：
 
 ```crystal
 '\'' # 單引號
@@ -21,12 +20,12 @@
 '\e' # 跳脫
 '\f' # 換頁
 '\n' # 換行
-'\r' # 回車
-'\t' # tab
-'\v' # 垂直tab
+'\r' # 輸入鍵 (Enter)
+'\t' # Tab
+'\v' # 垂直 Tab
 ```
 
-你可以使用反斜線搭配最多3個數字表達8進位編碼的字元:
+你可以使用反斜線搭配*最多 3 個*數字表達 8 進位編碼的字元：
 
 ```crystal
 '\101' # == 'A'
@@ -35,13 +34,13 @@
 '\1'   # 編碼位置 1
 ```
 
-你可以使用反斜線搭配一個 *u* 還有4個十六進位字元表達萬國碼編碼:
+你可以使用反斜線搭配一個 *u* 跟著 4 個十六進位數字來表達一個萬國碼碼位：
 
 ```crystal
 '\u0041' # == 'A'
 ```
 
-或者你可以用大括號夾住指定的最多6個十六進位數字(0 到 10FFFF):
+或你也可以用大括號（`{}`）括住*最多 6 個*十六進位數字（從 0 到 10FFFF）來表達：
 
 ```crystal
 '\u{41}'    # == 'A'
