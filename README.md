@@ -30,7 +30,7 @@
        * [x] [整數 (Integers)](_gitbook/syntax_and_semantics/literals/integers.md)
        * [x] [浮點數 (Floats)](_gitbook/syntax_and_semantics/literals/floats.md)
        * [x] [字元 (Char)](_gitbook/syntax_and_semantics/literals/char.md)
-       * [ ] [String](_gitbook/syntax_and_semantics/literals/string.md)
+       * [x] [字串 (String)](_gitbook/syntax_and_semantics/literals/string.md)
        * [ ] [Symbol](_gitbook/syntax_and_semantics/literals/symbol.md)
        * [ ] [Array](_gitbook/syntax_and_semantics/literals/array.md)
        * [ ] [Hash](_gitbook/syntax_and_semantics/literals/hash.md)
