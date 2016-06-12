@@ -53,7 +53,7 @@
        * [x] [範圍 (Range)](_gitbook/syntax_and_semantics/literals/range.md)
        * [x] [正規表示式 (Regex)](_gitbook/syntax_and_semantics/literals/regex.md)
        * [x] [序組 (Tuple)](_gitbook/syntax_and_semantics/literals/tuple.md)
-       * [ ] [NamedTuple](_gitbook/syntax_and_semantics/literals/named_tuple.md)
+       * [x] [命名序組 (NamedTuple)](_gitbook/syntax_and_semantics/literals/named_tuple.md)
        * [ ] [Proc](_gitbook/syntax_and_semantics/literals/proc.md)
    * [ ] [Local variables](_gitbook/syntax_and_semantics/local_variables.md)
    * [ ] [Global variables](_gitbook/syntax_and_semantics/global_variables.md)
