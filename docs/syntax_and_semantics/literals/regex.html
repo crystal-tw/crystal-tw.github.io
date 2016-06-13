@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Regex | Crystal 程式語言</title>
+        <title>正規表示式 (Regex) | Crystal 程式語言</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.3.2">
@@ -36,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="4.2.11" data-basepath="../.." data-revision="Sat Jun 11 2016 06:54:54 GMT+0000 (UTC)">
+    <div class="book" data-level="4.2.11" data-basepath="../.." data-revision="Mon Jun 13 2016 01:34:53 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -389,7 +389,7 @@
                         
                             <b>4.2.7.</b>
                         
-                        Symbol
+                        符號 (Symbol)
                     </a>
             
             
@@ -404,7 +404,7 @@
                         
                             <b>4.2.8.</b>
                         
-                        Array
+                        陣列 (Array)
                     </a>
             
             
@@ -419,7 +419,7 @@
                         
                             <b>4.2.9.</b>
                         
-                        Hash
+                        雜湊 (Hash)
                     </a>
             
             
@@ -434,7 +434,7 @@
                         
                             <b>4.2.10.</b>
                         
-                        Range
+                        範圍 (Range)
                     </a>
             
             
@@ -449,7 +449,7 @@
                         
                             <b>4.2.11.</b>
                         
-                        Regex
+                        正規表示式 (Regex)
                     </a>
             
             
@@ -464,7 +464,7 @@
                         
                             <b>4.2.12.</b>
                         
-                        Tuple
+                        序組 (Tuple)
                     </a>
             
             
@@ -479,7 +479,7 @@
                         
                             <b>4.2.13.</b>
                         
-                        NamedTuple
+                        命名序組 (NamedTuple)
                     </a>
             
             
@@ -1918,7 +1918,7 @@
                         
                             <b>4.17.</b>
                         
-                        Type grammar
+                        型別語法
                     </a>
             
             
@@ -2136,26 +2136,26 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="regex">Regex</h1>
-<p>Regular expressions are represented by the <a href="http://crystal-lang.org/api/Regex.html" target="_blank">Regex</a> class, which is usually created with a literal:</p>
+                        <h1 id="%E6%AD%A3%E8%A6%8F%E8%A1%A8%E7%A4%BA%E5%BC%8F-regex">&#x6B63;&#x898F;&#x8868;&#x793A;&#x5F0F; (Regex)</h1>
+<p>&#x6B63;&#x898F;&#x8868;&#x793A;&#x5F0F;&#xFF08;<a href="http://crystal-lang.org/api/Regex.html" target="_blank">Regex</a>&#xFF09;&#x901A;&#x5E38;&#x53EF;&#x4EE5;&#x7528;&#x4EE5;&#x4E0B;&#x65B9;&#x5F0F;&#x8868;&#x9054;&#xFF1A;</p>
 <pre><code class="lang-crystal">foo_or_bar = <span class="hljs-regexp">/foo|bar/</span>
 heeello    = <span class="hljs-regexp">/h(e+)llo/</span>
 integer    = <span class="hljs-regexp">/\d+/</span>
 </code></pre>
-<p>A regular expression literal is delimited by <code>/</code> and uses <a href="http://pcre.org/pcre.txt" target="_blank">PCRE</a> syntax.</p>
-<p>It can be followed by these modifiers:</p>
+<p>&#x6B63;&#x898F;&#x8868;&#x793A;&#x5F0F;&#x7684;&#x5E38;&#x503C;&#x4EE5; <code>/</code> &#x6A19;&#x793A;&#xFF0C;&#x4E14;&#x4F7F;&#x7528; <a href="http://pcre.org/pcre.txt" target="_blank">PCRE</a> &#x8A9E;&#x6CD5;&#x3002;</p>
+<p>&#x6B64;&#x5916;&#xFF0C;&#x9084;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x7684;&#x6A21;&#x5F0F;&#x4FEE;&#x98FE;&#x5B57;&#xFF1A;</p>
 <ul>
-<li>i: ignore case (PCRE_CASELESS)</li>
-<li>m: multiline (PCRE_MULTILINE)</li>
-<li>x: extended (PCRE_EXTENDED)</li>
+<li>i: &#x5FFD;&#x7565;&#x5927;&#x5C0F;&#x5BEB; (PCRE_CASELESS)</li>
+<li>m: &#x591A;&#x884C;&#x6BD4;&#x5C0D; (PCRE_MULTILINE)</li>
+<li>x: PCRE &#x64F4;&#x5145;&#x6A21;&#x5F0F; (PCRE_EXTENDED)</li>
 </ul>
-<p>For example</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
 <pre><code class="lang-crystal">r = <span class="hljs-regexp">/foo/imx</span>
 </code></pre>
-<p>Slashes must be escaped:</p>
+<p>&#x82E5;&#x8981;&#x5728;&#x6B63;&#x898F;&#x8868;&#x793A;&#x5F0F;&#x4E2D;&#x63CF;&#x8FF0;&#x659C;&#x7DDA;(<code>/</code>)&#xFF0C;&#x5247;&#x9700;&#x4EE5;&#x8DF3;&#x812B;&#x8868;&#x9054;&#xFF1A;</p>
 <pre><code class="lang-crystal">slash = <span class="hljs-regexp">/\//</span>
 </code></pre>
-<p>An alternative syntax is provided:</p>
+<p>&#x6216;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x7684;&#x8A9E;&#x6CD5;&#xFF1A;</p>
 <pre><code class="lang-crystal">r = <span class="hljs-variable">%r</span>(regex <span class="hljs-keyword">with</span> <span class="hljs-symbol">slash:</span> /)
 </code></pre>
 
@@ -2168,10 +2168,10 @@ integer    = <span class="hljs-regexp">/\d+/</span>
         </div>
 
         
-        <a href="../../syntax_and_semantics/literals/range.html" class="navigation navigation-prev " aria-label="Previous page: Range"><i class="fa fa-angle-left"></i></a>
+        <a href="../../syntax_and_semantics/literals/range.html" class="navigation navigation-prev " aria-label="Previous page: 範圍 (Range)"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../syntax_and_semantics/literals/tuple.html" class="navigation navigation-next " aria-label="Next page: Tuple"><i class="fa fa-angle-right"></i></a>
+        <a href="../../syntax_and_semantics/literals/tuple.html" class="navigation navigation-next " aria-label="Next page: 序組 (Tuple)"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
