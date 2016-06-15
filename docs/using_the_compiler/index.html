@@ -36,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="2" data-basepath=".." data-revision="Mon Jun 13 2016 06:16:54 GMT+0000 (UTC)">
+    <div class="book" data-level="2" data-basepath=".." data-revision="Wed Jun 15 2016 17:56:53 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2146,12 +2146,12 @@
 <p>&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>run</code> :</p>
 <pre><code>$ crystal run some_program.cr
 </code></pre><h2 id="%E7%94%A2%E7%94%9F%E4%B8%80%E5%80%8B%E5%9F%B7%E8%A1%8C%E6%AA%94">&#x7522;&#x751F;&#x4E00;&#x500B;&#x57F7;&#x884C;&#x6A94;</h2>
-<p>&#x4F7F;&#x7528; <code>build</code> &#x547D;&#x4EE4;&#x7522;&#x751F;&#x4E00;&#x500B;&#x57F7;&#x884C;&#x6A94;:</p>
-<pre><code>$ crystal build some_program.cr
+<p>&#x4F7F;&#x7528; <code>compile</code> &#x547D;&#x4EE4;&#x7522;&#x751F;&#x4E00;&#x500B;&#x57F7;&#x884C;&#x6A94;:</p>
+<pre><code>$ crystal compile some_program.cr
 </code></pre><p>&#x9019;&#x6703;&#x7522;&#x751F;&#x4E00;&#x500B;&#x53EF;&#x4F9B;&#x57F7;&#x884C;&#x7684; <code>some_program</code> &#x6A94;&#x6848;:</p>
 <pre><code>$ ./some_program
 </code></pre><p><strong>&#x6CE8;&#x610F; :</strong> &#x5728;&#x9810;&#x8A2D;&#x60C5;&#x6CC1;&#x4E0B;&#x7522;&#x751F;&#x7684;&#x57F7;&#x884C;&#x6A94; <strong>&#x4E26;&#x6C92;&#x6709;&#x88AB;&#x5B8C;&#x5168;&#x512A;&#x5316;</strong>&#x3002; &#x4F7F;&#x7528; <code>--release</code> &#x53C3;&#x6578;&#x4F86;&#x555F;&#x7528;&#x512A;&#x5316;&#x529F;&#x80FD;:</p>
-<pre><code>$ crystal build some_program.cr --release
+<pre><code>$ crystal compile some_program.cr --release
 </code></pre><p>&#x78BA;&#x4FDD;&#x5728;&#x7DE8;&#x8B6F;&#x6E96;&#x5099;&#x767C;&#x884C;( production-ready )&#x7684;&#x57F7;&#x884C;&#x6A94;&#x53CA;&#x8A55;&#x6548;( benchmarks )&#x6642;&#x6BCF;&#x6B21;&#x90FD;&#x6709;&#x4F7F;&#x7528; <code>--release</code>&#x3002;</p>
 <p>&#x9019;&#x9EBC;&#x505A;&#x7684;&#x539F;&#x56E0;&#x662F;&#x56E0;&#x70BA;&#x5C31;&#x7B97;&#x6C92;&#x6709;&#x5B8C;&#x5168;&#x512A;&#x5316;&#xFF0C;&#x5B83;&#x7684;&#x8868;&#x73FE;&#x9084;&#x662F;&#x975E;&#x5E38;&#x597D;&#x800C;&#x4E14;&#x7DE8;&#x8B6F;&#x7684;&#x8F03;&#x5FEB;&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x53EF;&#x4EE5;&#x50CF;&#x4F7F;&#x7528;&#x76F4;&#x8B6F;&#x5668;&#x4E00;&#x6A23;&#x4F7F;&#x7528; <code>crystal</code> &#x547D;&#x4EE4;&#x3002;</p>
 <h2 id="%E7%94%A2%E7%94%9F%E4%B8%80%E5%80%8B%E5%B0%88%E6%A1%88%E6%88%96%E6%98%AF%E5%87%BD%E5%BC%8F%E5%BA%AB">&#x7522;&#x751F;&#x4E00;&#x500B;&#x5C08;&#x6848;&#x6216;&#x662F;&#x51FD;&#x5F0F;&#x5EAB;</h2>
@@ -2173,25 +2173,28 @@ Initialized empty Git repository in ~/MyCoolLib/.git/
 Usage: crystal [command] [switches] [program file] [--] [arguments]
 
 Command:
-    init                     generate new crystal project
-    build                    compile program file
+    init                     generate a new project
+    compile                  compile program
     deps                     install project dependencies
     docs                     generate documentation
+    env                      print Crystal environment information
     eval                     eval code from args or standard input
-    run (default)            compile and run program file
+    play                     starts crystal playground server
+    run (default)            compile and run program
     spec                     compile and run specs (in spec directory)
     tool                     run a tool
-    --help, -h               show this help
-    --version, -v            show version
+    help, --help, -h         show this help
+    version, --version, -v   show version
 </code></pre><p>&#x5728;&#x547D;&#x4EE4;&#x5F8C;&#x4F7F;&#x7528; <code>--help</code> &#x4F86;&#x67E5;&#x770B;&#x8A72;&#x547D;&#x4EE4;&#x6240;&#x6709;&#x53EF;&#x7528;&#x7684;&#x9078;&#x9805;:</p>
-<pre><code>$ crystal build --help
-Usage: crystal build [options] [programfile] [--] [arguments]
+<pre><code>$ crystal compile --help
+Usage: crystal compile [options] [programfile] [--] [arguments]
 
 Options:
-    --cross-compile flags            cross-compile
+    --cross-compile                  cross-compile
     -d, --debug                      Add symbolic debug info
     -D FLAG, --define FLAG           Define a compile-time flag
     --emit [asm|llvm-bc|llvm-ir|obj] Comma separated list of types of output for the compiler to emit
+    -f text|json, --format text|json Output format text (default) or json
     -h, --help                       Show this message
     --ll                             Dump ll to .crystal directory
     --link-flags FLAGS               Additional flags to pass to the linker
