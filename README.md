@@ -18,7 +18,21 @@
 # 字串 <small>String</small>
 ```
 
+* 儘量避免使用第二人稱，將 `You` 改以第一人稱複數表達，如：
+
+```
+In type restrictions, generic type arguments and other places where a type is expected, **you** can use a shorter syntax, as explained in the type:
+```
+
+會翻譯成：
+
+```
+當使用在型別限制時，於任何泛型型別參數或是其他需要填寫型別的地方，「我們」也可以使用簡短的語法來表示序組的型別，這在型別語法一章中會解釋：
+```
+
 ## 翻譯進度
+
+目前上游：`e04e235ef04a5fb2605e3da88c52a16ff7ac4d16`
 
 ### Blog
 
@@ -40,25 +54,25 @@
    * [x] [HTTP伺服器](_gitbook/overview/http_server.md)
 * [x] [語法及語意](_gitbook/syntax_and_semantics/README.md)
    * [x] [註解](_gitbook/syntax_and_semantics/comments.md)
-   * [x] [常值](_gitbook/syntax_and_semantics/literals.md)
+   * [x] [常值 (Literals)](_gitbook/syntax_and_semantics/literals.md)
        * [x] [空值 (Nil)](_gitbook/syntax_and_semantics/literals/nil.md)
        * [x] [布林值 (Bool)](_gitbook/syntax_and_semantics/literals/bool.md)
        * [x] [整數 (Integers)](_gitbook/syntax_and_semantics/literals/integers.md)
        * [x] [浮點數 (Floats)](_gitbook/syntax_and_semantics/literals/floats.md)
        * [x] [字元 (Char)](_gitbook/syntax_and_semantics/literals/char.md)
        * [x] [字串 (String)](_gitbook/syntax_and_semantics/literals/string.md)
-       * [ ] [Symbol](_gitbook/syntax_and_semantics/literals/symbol.md)
-       * [ ] [Array](_gitbook/syntax_and_semantics/literals/array.md)
-       * [ ] [Hash](_gitbook/syntax_and_semantics/literals/hash.md)
-       * [ ] [Range](_gitbook/syntax_and_semantics/literals/range.md)
-       * [ ] [Regex](_gitbook/syntax_and_semantics/literals/regex.md)
-       * [ ] [Tuple](_gitbook/syntax_and_semantics/literals/tuple.md)
-       * [ ] [NamedTuple](_gitbook/syntax_and_semantics/literals/named_tuple.md)
-       * [ ] [Proc](_gitbook/syntax_and_semantics/literals/proc.md)
-   * [ ] [Local variables](_gitbook/syntax_and_semantics/local_variables.md)
-   * [ ] [Global variables](_gitbook/syntax_and_semantics/global_variables.md)
-   * [ ] [Assignment](_gitbook/syntax_and_semantics/assignment.md)
-       * [ ] [Multiple assignment](_gitbook/syntax_and_semantics/multiple_assignment.md)
+       * [x] [符號 (Symbol)](_gitbook/syntax_and_semantics/literals/symbol.md)
+       * [x] [陣列 (Array)](_gitbook/syntax_and_semantics/literals/array.md)
+       * [x] [雜湊 (Hash)](_gitbook/syntax_and_semantics/literals/hash.md)
+       * [x] [範圍 (Range)](_gitbook/syntax_and_semantics/literals/range.md)
+       * [x] [正規表示式 (Regex)](_gitbook/syntax_and_semantics/literals/regex.md)
+       * [x] [序組 (Tuple)](_gitbook/syntax_and_semantics/literals/tuple.md)
+       * [x] [命名序組 (NamedTuple)](_gitbook/syntax_and_semantics/literals/named_tuple.md)
+       * [x] [程序 (Proc)](_gitbook/syntax_and_semantics/literals/proc.md)
+   * [x] [賦值](_gitbook/syntax_and_semantics/assignment.md)
+       * [x] [多項賦值](_gitbook/syntax_and_semantics/multiple_assignment.md)
+   * [x] [區域變數](_gitbook/syntax_and_semantics/local_variables.md)
+   * [x] [全域變數](_gitbook/syntax_and_semantics/global_variables.md)
    * [ ] [Union types](_gitbook/syntax_and_semantics/union_types.md)
    * [ ] [Control expressions](_gitbook/syntax_and_semantics/control_expressions.md)
        * [ ] [Truthy and falsey values](_gitbook/syntax_and_semantics/truthy_and_falsey_values.md)
@@ -85,7 +99,7 @@
        * [ ] [Classes and methods](_gitbook/syntax_and_semantics/classes_and_methods.md)
            * [ ] [new, initialize and allocate](_gitbook/syntax_and_semantics/new,_initialize_and_allocate.md)
            * [ ] [Methods and instance variables](_gitbook/syntax_and_semantics/methods_and_instance_variables.md)
-           * [ ] [Type inference](_gitbook/syntax_and_semantics/type_inference.md)
+           * [ ] [型別推導](_gitbook/syntax_and_semantics/type_inference.md)
            * [ ] [Overloading](_gitbook/syntax_and_semantics/overloading.md)
            * [ ] [Default values and named arguments](_gitbook/syntax_and_semantics/default_and_named_arguments.md)
            * [ ] [Splats and tuples](_gitbook/syntax_and_semantics/splats_and_tuples.md)
@@ -143,7 +157,7 @@
        * [ ] [type](_gitbook/syntax_and_semantics/c_bindings/type.md)
        * [ ] [alias](_gitbook/syntax_and_semantics/c_bindings/alias.md)
        * [ ] [Callbacks](_gitbook/syntax_and_semantics/c_bindings/callbacks.md)
-   * [ ] [Type grammar](_gitbook/syntax_and_semantics/type_grammar.md)
+   * [ ] [型別語法](_gitbook/syntax_and_semantics/type_grammar.md)
    * [ ] [Unsafe code](_gitbook/syntax_and_semantics/unsafe.md)
 * [ ] [Conventions](_gitbook/conventions/README.md)
    * [ ] [Coding style](_gitbook/conventions/coding_style.md)

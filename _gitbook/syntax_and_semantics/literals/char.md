@@ -1,8 +1,8 @@
 # 字元 <small>Char</small>
 
-字元 ([Char](http://crystal-lang.org/api/Char.html)) 表達一個 [萬國碼 (Unicode)](http://zh.wikipedia.org/wiki/Unicode) 的[編碼位置 (code point)](https://zh.wikipedia.org/wiki/碼位)。以二進位表達時佔用 32 位元。
+字元（[Char](http://crystal-lang.org/api/Char.html)）表達一個[萬國碼<small>(Unicode)</small>](http://zh.wikipedia.org/wiki/Unicode)的[編碼位置<small>(Code point)</small>](https://zh.wikipedia.org/wiki/碼位)。以二進位表達時佔用 32 位元。
 
-以一對單引號來括住一個 UTF-8 文字來表達一個字元。
+以一對單引號來括住一個 UTF-8 文字來表達一個字元常值：
 
 ```crystal
 'a'
