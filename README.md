@@ -59,7 +59,7 @@
        * [x] [程序 (Proc)](_gitbook/syntax_and_semantics/literals/proc.md)
    * [x] [區域變數](_gitbook/syntax_and_semantics/local_variables.md)
    * [x] [全域變數](_gitbook/syntax_and_semantics/global_variables.md)
-   * [ ] [Assignment](_gitbook/syntax_and_semantics/assignment.md)
+   * [x] [賦值](_gitbook/syntax_and_semantics/assignment.md)
        * [ ] [Multiple assignment](_gitbook/syntax_and_semantics/multiple_assignment.md)
    * [ ] [Union types](_gitbook/syntax_and_semantics/union_types.md)
    * [ ] [Control expressions](_gitbook/syntax_and_semantics/control_expressions.md)
