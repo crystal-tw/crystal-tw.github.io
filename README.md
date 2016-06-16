@@ -20,6 +20,8 @@
 
 ## 翻譯進度
 
+目前上游：`e04e235ef04a5fb2605e3da88c52a16ff7ac4d16`
+
 ### Blog
 
 規劃中。
@@ -40,7 +42,7 @@
    * [x] [HTTP伺服器](_gitbook/overview/http_server.md)
 * [x] [語法及語意](_gitbook/syntax_and_semantics/README.md)
    * [x] [註解](_gitbook/syntax_and_semantics/comments.md)
-   * [x] [常值](_gitbook/syntax_and_semantics/literals.md)
+   * [x] [常值 (Literals)](_gitbook/syntax_and_semantics/literals.md)
        * [x] [空值 (Nil)](_gitbook/syntax_and_semantics/literals/nil.md)
        * [x] [布林值 (Bool)](_gitbook/syntax_and_semantics/literals/bool.md)
        * [x] [整數 (Integers)](_gitbook/syntax_and_semantics/literals/integers.md)
