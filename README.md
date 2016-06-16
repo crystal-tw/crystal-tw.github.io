@@ -60,7 +60,7 @@
    * [x] [區域變數](_gitbook/syntax_and_semantics/local_variables.md)
    * [x] [全域變數](_gitbook/syntax_and_semantics/global_variables.md)
    * [x] [賦值](_gitbook/syntax_and_semantics/assignment.md)
-       * [ ] [Multiple assignment](_gitbook/syntax_and_semantics/multiple_assignment.md)
+       * [x] [多項賦值](_gitbook/syntax_and_semantics/multiple_assignment.md)
    * [ ] [Union types](_gitbook/syntax_and_semantics/union_types.md)
    * [ ] [Control expressions](_gitbook/syntax_and_semantics/control_expressions.md)
        * [ ] [Truthy and falsey values](_gitbook/syntax_and_semantics/truthy_and_falsey_values.md)
