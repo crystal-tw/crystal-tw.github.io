@@ -57,7 +57,7 @@
        * [x] [序組 (Tuple)](_gitbook/syntax_and_semantics/literals/tuple.md)
        * [x] [命名序組 (NamedTuple)](_gitbook/syntax_and_semantics/literals/named_tuple.md)
        * [x] [程序 (Proc)](_gitbook/syntax_and_semantics/literals/proc.md)
-   * [ ] [Local variables](_gitbook/syntax_and_semantics/local_variables.md)
+   * [x] [區域變數](_gitbook/syntax_and_semantics/local_variables.md)
    * [ ] [Global variables](_gitbook/syntax_and_semantics/global_variables.md)
    * [ ] [Assignment](_gitbook/syntax_and_semantics/assignment.md)
        * [ ] [Multiple assignment](_gitbook/syntax_and_semantics/multiple_assignment.md)
