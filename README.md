@@ -32,7 +32,7 @@ In type restrictions, generic type arguments and other places where a type is ex
 
 ## 翻譯進度
 
-目前上游：`e04e235ef04a5fb2605e3da88c52a16ff7ac4d16`
+目前上游：`bdd739595ab6ab607a29e3a3be2890d020cac809`
 
 ### Blog
 
