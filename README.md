@@ -18,6 +18,18 @@
 # 字串 <small>String</small>
 ```
 
+* 儘量避免使用第二人稱，將 `You` 改以第一人稱複數表達，如：
+
+```
+In type restrictions, generic type arguments and other places where a type is expected, **you** can use a shorter syntax, as explained in the type:
+```
+
+會翻譯成：
+
+```
+當使用在型別限制時，於任何泛型型別參數或是其他需要填寫型別的地方，「我們」也可以使用簡短的語法來表示序組的型別，這在型別語法一章中會解釋：
+```
+
 ## 翻譯進度
 
 目前上游：`e04e235ef04a5fb2605e3da88c52a16ff7ac4d16`
