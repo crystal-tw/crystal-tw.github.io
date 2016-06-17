@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>HTTP伺服器 | Crystal 程式語言</title>
+        <title>HTTP 伺服器 | Crystal 程式語言</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.3.2">
@@ -36,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="3.2" data-basepath=".." data-revision="Thu Jun 16 2016 19:31:30 GMT+0000 (UTC)">
+    <div class="book" data-level="3.2" data-basepath=".." data-revision="Fri Jun 17 2016 00:42:37 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -91,7 +91,7 @@
                         
                             <b>1.1.</b>
                         
-                        在 Debian / Ubuntu 環境下安裝
+                        在 Debian／Ubuntu 環境下安裝
                     </a>
             
             
@@ -106,7 +106,7 @@
                         
                             <b>1.2.</b>
                         
-                        在 RedHat / CentOS 環境下安裝
+                        在 RedHat／CentOS 環境下安裝
                     </a>
             
             
@@ -232,7 +232,7 @@
                         
                             <b>3.2.</b>
                         
-                        HTTP伺服器
+                        HTTP 伺服器
                     </a>
             
             
@@ -1498,7 +1498,7 @@
                         
                             <b>4.11.</b>
                         
-                        Requiring files
+                        引入檔案
                     </a>
             
             
@@ -2136,8 +2136,8 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="http-server">HTTP Server</h1>
-<p>&#x4E00;&#x500B;&#x66F4;&#x6709;&#x8DA3;&#x7684;&#x4F8B;&#x5B50;&#x662F;  HTTP Server :</p>
+                        <h1 id="http-%E4%BC%BA%E6%9C%8D%E5%99%A8">HTTP &#x4F3A;&#x670D;&#x5668;</h1>
+<p>&#x4E00;&#x500B;&#x66F4;&#x6709;&#x8DA3;&#x7684;&#x4F8B;&#x5B50;&#x662F; HTTP &#x4F3A;&#x670D;&#x5668;&#xFF1A;</p>
 <pre><code class="lang-crystal"><span class="hljs-keyword">require</span> <span class="hljs-string">&quot;http/server&quot;</span>
 
 server = <span class="hljs-constant">HTTP::Server</span>.new(<span class="hljs-number">8080</span>) <span class="hljs-keyword">do</span> |context|
@@ -2150,15 +2150,15 @@ server.listen
 </code></pre>
 <p>&#x5728;&#x8B80;&#x5B8C;&#x6574;&#x4EFD;&#x6587;&#x4EF6;&#x5F8C;&#x5C31;&#x80FD;&#x7406;&#x89E3;&#x4E0A;&#x8FF0;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x5011;&#x80FD;&#x5920;&#x767C;&#x73FE;&#x4E00;&#x4E9B;&#x4E8B;&#x60C5;&#x3002;</p>
 <ul>
-<li><p>&#x4F60;&#x53EF;&#x4EE5; <a href="../syntax_and_semantics/requiring_files.html">&#x5305;&#x542B;(require)</a>   &#x5176;&#x4ED6;&#x6587;&#x4EF6;&#x88E1;&#x9762;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;:</p>
+<li><p>&#x6211;&#x5011;&#x53EF;&#x4EE5;<a href="../syntax_and_semantics/requiring_files.html">&#x5F15;&#x5165; (Require)</a>&#x5176;&#x4ED6;&#x6587;&#x4EF6;&#x88E1;&#x9762;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#xFF1A;</p>
 <pre><code>  require &quot;http/server&quot;
 </code></pre></li>
-<li><p>&#x4F60;&#x53EF;&#x4EE5;&#x5B9A;&#x7FA9; <a href="../syntax_and_semantics/local_variables.html">&#x5340;&#x57DF;&#x8B8A;&#x6578;</a> &#x800C;&#x4E14;&#x4E0D;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x578B;&#x614B;:</p>
+<li><p>&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x5B9A;&#x7FA9;<a href="../syntax_and_semantics/local_variables.html">&#x5340;&#x57DF;&#x8B8A;&#x6578;</a>&#x800C;&#x4E14;&#x9084;&#x4E0D;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x578B;&#x614B;&#xFF1A;</p>
 <pre><code>  server = HTTP::Server.new ...
 </code></pre></li>
 </ul>
 <ul>
-<li><p>&#x4F60;&#x53EF;&#x4EE5;&#x547C;&#x53EB;&#x7269;&#x4EF6;&#x7684;<a href="../syntax_and_semantics/classes_and_methods.html">&#x65B9;&#x6CD5;</a> ( &#x6216;&#x50B3;&#x9001;&#x8A0A;&#x606F; )&#x4F86;&#x64B0;&#x5BEB;&#x7A0B;&#x5F0F;:</p>
+<li><p>&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x900F;&#x904E;&#x547C;&#x53EB;&#x7269;&#x4EF6;&#x7684;<a href="../syntax_and_semantics/classes_and_methods.html">&#x65B9;&#x6CD5;</a>&#xFF08;&#x6216;&#x50B3;&#x9001;&#x8A0A;&#x606F;&#xFF09;&#x4F86;&#x64B0;&#x5BEB;&#x7A0B;&#x5F0F;&#xFF1A;</p>
 <pre><code>  HTTP::Server.new(8000) ...
   ...
   Time.now
@@ -2167,7 +2167,7 @@ server.listen
   ...
   server.listen
 </code></pre></li>
-<li><p>&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<a href="../syntax_and_semantics/blocks_and_procs.html">&#x5340;&#x584A;&#x78BC;( blocks )</a>&#xFF0C;&#x800C;&#x9019;&#x662F;&#x500B;&#x91CD;&#x8907;&#x5229;&#x7528;&#x7A0B;&#x5F0F;&#x78BC;&#x7684;&#x597D;&#x65B9;&#x6CD5;&#x4E5F;&#x662F;&#x51FD;&#x5F0F;&#x5316;&#x7684;&#x7279;&#x8272;&#x4E4B;&#x4E00;&#x3002;</p>
+<li><p>&#x6211;&#x5011;&#x9084;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<a href="../syntax_and_semantics/blocks_and_procs.html">&#x7A0B;&#x5F0F;&#x5340;&#x584A; (Blocks)</a>&#xFF0C;&#x9019;&#x662F;&#x500B;&#x91CD;&#x8907;&#x5229;&#x7528;&#x7A0B;&#x5F0F;&#x78BC;&#x7684;&#x597D;&#x65B9;&#x6CD5;&#xFF0C;&#x540C;&#x6642;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x4F86;&#x6A21;&#x4EFF;&#x51FD;&#x6578;&#x7A0B;&#x5F0F;&#x8A2D;&#x8A08;&#x7684;&#x7279;&#x6027;&#x3002;</p>
 <pre><code class="lang-ruby">  <span class="hljs-constant">HTTP::Server</span>.new(<span class="hljs-number">8080</span>) <span class="hljs-keyword">do</span> |context|
     ...
   <span class="hljs-keyword">end</span>
@@ -2175,7 +2175,7 @@ server.listen
 </li>
 </ul>
 <ul>
-<li><p>&#x4F60;&#x53EF;&#x4EE5;&#x7528;&#x5D4C;&#x5165;&#x7684;&#x65B9;&#x5F0F;&#x7C21;&#x55AE;&#x7684;&#x7522;&#x751F;&#x4E00;&#x500B;&#x5B57;&#x4E32;&#xFF0C;&#x7A31;&#x4F5C;&#x5B57;&#x4E32;&#x5167;&#x63D2;( string interpolation )&#x3002;&#x540C;&#x6642; Crystal &#x4E5F;&#x80FD;&#x4F7F;&#x7528;&#x5176;&#x4ED6; <a href="../syntax_and_semantics/literals.html">&#x8A9E;&#x6CD5;</a> &#x4F86;&#x7522;&#x751F;&#x9663;&#x5217;&#x3001;&#x96DC;&#x6E4A;( hash )&#x3001;&#x7BC4;&#x570D;&#x985E;&#x5225;( range )&#x3001;&#x5143;&#x7D44;( tuple ) &#x7B49;&#x7B49; :</p>
+<li><p>&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x8F15;&#x9B06;&#x5730;&#x5EFA;&#x7ACB;&#x4E26;&#x5D4C;&#x5165;&#x5167;&#x5BB9;&#x5230;&#x4E00;&#x500B;&#x5B57;&#x4E32;&#xFF0C;&#x7A31;&#x4F5C;&#x5B57;&#x4E32;&#x5167;&#x63D2;<small>(String interpolation)</small>&#x3002;&#x540C;&#x6642; Crystal &#x4E5F;&#x80FD;&#x4F7F;&#x7528;&#x5176;&#x4ED6;[&#x8A9E;&#x6CD5;](../syntax_and_semantics/literals.md)&#x4F86;&#x7522;&#x751F;&#x9663;&#x5217;&#x3001;&#x96DC;&#x6E4A;<small>(Hash)</small>&#x3001;&#x7BC4;&#x570D;<small>(Range)</small>&#x3001;&#x5E8F;&#x7D44;<small>(Tuple)</small>&#x2026;&#x2026;&#x7B49;&#xFF1A;</p>
 <pre><code>  &quot;Hello world! The time is #{Time.now}&quot;
 </code></pre></li>
 </ul>

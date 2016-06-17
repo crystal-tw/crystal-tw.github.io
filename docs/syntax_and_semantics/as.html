@@ -36,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="4.9.4" data-basepath=".." data-revision="Thu Jun 16 2016 19:31:30 GMT+0000 (UTC)">
+    <div class="book" data-level="4.9.4" data-basepath=".." data-revision="Fri Jun 17 2016 00:42:37 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -91,7 +91,7 @@
                         
                             <b>1.1.</b>
                         
-                        在 Debian / Ubuntu 環境下安裝
+                        在 Debian／Ubuntu 環境下安裝
                     </a>
             
             
@@ -106,7 +106,7 @@
                         
                             <b>1.2.</b>
                         
-                        在 RedHat / CentOS 環境下安裝
+                        在 RedHat／CentOS 環境下安裝
                     </a>
             
             
@@ -232,7 +232,7 @@
                         
                             <b>3.2.</b>
                         
-                        HTTP伺服器
+                        HTTP 伺服器
                     </a>
             
             
@@ -1498,7 +1498,7 @@
                         
                             <b>4.11.</b>
                         
-                        Requiring files
+                        引入檔案
                     </a>
             
             
@@ -2137,7 +2137,7 @@
                     <section class="normal" id="section-">
                     
                         <h1 id="as">as</h1>
-<p><code>as</code> &#x662F;&#x4E00;&#x500B;&#x865B;&#x64EC;&#x65B9;&#x6CD5;&#xFF08;pseudo-method&#xFF09;&#xFF0C;&#x80FD;&#x5920;&#x9650;&#x5236;&#x4E00;&#x500B;&#x8868;&#x9054;&#x5F0F;&#x7684;&#x578B;&#x5225;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<p><code>as</code> &#x662F;&#x4E00;&#x500B;&#x865B;&#x64EC;&#x65B9;&#x6CD5;<small>(Pseudo-method)</small>&#xFF0C;&#x80FD;&#x5920;&#x9650;&#x5236;&#x4E00;&#x500B;&#x8868;&#x9054;&#x5F0F;&#x7684;&#x578B;&#x5225;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
 <pre><code class="lang-crystal"><span class="hljs-keyword">if</span> some_condition
   a = <span class="hljs-number">1</span>
 <span class="hljs-keyword">else</span>
@@ -2146,7 +2146,7 @@
 
 <span class="hljs-comment"># a : Int32 | String</span>
 </code></pre>
-<p>&#x4E0A;&#x8FF0;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#x4E2D;&#xFF0C;<code>a</code> &#x662F;&#x4E00;&#x500B; <code>Int32 | String</code> &#x7684;&#x6DF7;&#x5408;&#x578B;&#x5225;&#x3002;</p>
+<p>&#x4E0A;&#x8FF0;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#x4E2D;&#xFF0C;<code>a</code> &#x7684;&#x578B;&#x5225;&#x662F;&#x4E00;&#x500B; <code>Int32 | String</code> &#x7684;&#x578B;&#x5225;&#x96C6;&#x5408;&#x3002;</p>
 <p>&#x5047;&#x5B9A; <code>a</code> &#x5728;&#x57F7;&#x884C; <code>if</code> &#x4E4B;&#x5F8C;&#x662F;&#x4E00;&#x500B; <code>Int32</code>&#xFF0C;&#x90A3;&#x9EBC;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x5F37;&#x5236;&#x7DE8;&#x8B6F;&#x5668;&#x5C07;&#x5176;&#x8996;&#x70BA;&#x4E00;&#x500B; <code>Int32</code>&#xFF1A;</p>
 <pre><code class="lang-crystal">a_as_int = a.as(<span class="hljs-constant">Int32</span>)
 a_as_int.abs          <span class="hljs-comment"># &#x53EF;&#x884C;&#xFF0C;&#x7DE8;&#x8B6F;&#x5668;&#x77E5;&#x9053; a_as_int &#x662F; Int32</span>
@@ -2156,13 +2156,13 @@ a_as_int.abs          <span class="hljs-comment"># &#x53EF;&#x884C;&#xFF0C;&#x7D
 <p>&#x53E6;&#x5916;&#xFF0C;&#x4E0D;&#x80FD;&#x5920;&#x5C07;&#x4EFB;&#x4E00;&#x7A2E;&#x578B;&#x5225;&#x9650;&#x5236;&#x70BA;&#x53E6;&#x4E00;&#x7A2E;&#x578B;&#x5225;&#xFF0C;&#x9019;&#x5C07;&#x5728;&#x7DE8;&#x8B6F;&#x6642;&#x671F;&#x767C;&#x51FA;&#x932F;&#x8AA4;&#xFF1A;</p>
 <pre><code class="lang-crystal"><span class="hljs-number">1</span>.as(<span class="hljs-constant">String</span>) <span class="hljs-comment"># Compile-time error</span>
 </code></pre>
-<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> &#x4F60;&#x4E0D;&#x80FD;&#x4F7F;&#x7528; <code>as</code> &#x5C07;&#x4E00;&#x500B;&#x578B;&#x5225;&#x8F49;&#x63DB;&#x70BA;&#x53E6;&#x4E00;&#x500B;&#x4E0D;&#x76F8;&#x95DC;&#x7684;&#x578B;&#x5225; &#x2014;&#x2014; <code>as</code> &#x4E26;&#x4E0D;&#x50CF;&#x5176;&#x4ED6;&#x8A9E;&#x8A00;&#x88E1;&#x7684; <code>cast</code>&#xFF08;&#x8F49;&#x578B;&#xFF09;&#x3002;&#x800C;&#x5728;&#x6574;&#x6578;&#x3001;&#x6D6E;&#x9EDE;&#x6578;&#x8207;&#x5B57;&#x5143;&#x4E2D;&#x6709;&#x53E6;&#x5916;&#x63D0;&#x4F9B;&#x8F49;&#x578B;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6216;&#x8457;&#x6211;&#x5011;&#x4E5F;&#x80FD;&#x7167;&#x4E0B;&#x65B9;&#x8AAA;&#x660E;&#x7684;&#x6307;&#x6A19;&#x4F86;&#x8F49;&#x578B;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> &#x6211;&#x5011;&#x4E0D;&#x80FD;&#x4F7F;&#x7528; <code>as</code> &#x5C07;&#x4E00;&#x500B;&#x578B;&#x5225;&#x8F49;&#x63DB;&#x70BA;&#x53E6;&#x4E00;&#x500B;&#x4E0D;&#x76F8;&#x95DC;&#x7684;&#x578B;&#x5225; &#x2014;&#x2014; <code>as</code> &#x4E26;&#x4E0D;&#x50CF;&#x5176;&#x4ED6;&#x8A9E;&#x8A00;&#x88E1;&#x7684; <code>cast</code>&#xFF08;&#x8F49;&#x578B;&#xFF09;&#x3002;&#x800C;&#x5728;&#x6574;&#x6578;&#x3001;&#x6D6E;&#x9EDE;&#x6578;&#x8207;&#x5B57;&#x5143;&#x4E2D;&#x6709;&#x53E6;&#x5916;&#x63D0;&#x4F9B;&#x8F49;&#x578B;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6216;&#x8457;&#x6211;&#x5011;&#x4E5F;&#x80FD;&#x7167;&#x4E0B;&#x65B9;&#x8AAA;&#x660E;&#x7684;&#x6307;&#x6A19;&#x4F86;&#x8F49;&#x578B;&#x3002;</p>
 <h2 id="%E6%8C%87%E6%A8%99%E4%B9%8B%E9%96%93%E7%9A%84%E8%BD%89%E5%9E%8B">&#x6307;&#x6A19;&#x4E4B;&#x9593;&#x7684;&#x8F49;&#x578B;</h2>
 <p><code>as</code> &#x4E5F;&#x5141;&#x8A31;&#x7528;&#x4F5C;&#x6307;&#x6A19;&#x4E4B;&#x9593;&#x7684;&#x578B;&#x5225;&#x8F49;&#x63DB;&#xFF1A;</p>
 <pre><code class="lang-crystal">ptr = <span class="hljs-constant">Pointer</span>(<span class="hljs-constant">Int32</span>).malloc(<span class="hljs-number">1</span>)
-ptr.as(<span class="hljs-constant">Int8</span>*)                    <span class="hljs-comment">#:: Pointer(Int8)</span>
+ptr.as(<span class="hljs-constant">Int8</span>*)                    <span class="hljs-comment"># : Pointer(Int8)</span>
 </code></pre>
-<p>&#x5728;&#x4E0A;&#x65B9;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x4E26;&#x6C92;&#x6709;&#x9032;&#x884C;&#x6AA2;&#x67E5; &#x2014;&#x2014; &#x6307;&#x6A19;&#x975E;&#x5E38;&#x7684;&#x4E0D;&#x5B89;&#x5168;&#xFF0C;&#x800C;&#x9019;&#x985E;&#x578B;&#x7684;&#x8F49;&#x578B;&#x901A;&#x5E38;&#x53EA;&#x5728; C &#x8A9E;&#x8A00;&#x7E6B;&#x7D50;&#x6216;&#x662F;&#x66F4;&#x5E95;&#x5C64;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#x4E2D;&#x624D;&#x9700;&#x8981;&#x3002;</p>
+<p>&#x5728;&#x4E0A;&#x65B9;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x4E26;&#x6C92;&#x6709;&#x9032;&#x884C;&#x6AA2;&#x67E5; &#x2014;&#x2014; &#x6307;&#x6A19;&#x975E;&#x5E38;&#x7684;&#x4E0D;&#x5B89;&#x5168;&#xFF0C;&#x800C;&#x9019;&#x985E;&#x578B;&#x7684;&#x8F49;&#x578B;&#x901A;&#x5E38;&#x53EA;&#x5728; C &#x8A9E;&#x8A00;&#x7E6B;&#x7D50;<small>(Binding)</small>&#x6216;&#x662F;&#x66F4;&#x5E95;&#x5C64;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#x4E2D;&#x624D;&#x9700;&#x8981;&#x3002;</p>
 <h2 id="%E6%8C%87%E6%A8%99%E5%9E%8B%E5%88%A5%E8%88%87%E5%85%B6%E4%BB%96%E5%9E%8B%E5%88%A5%E4%B9%8B%E9%96%93%E7%9A%84%E8%BD%89%E6%8F%9B">&#x6307;&#x6A19;&#x578B;&#x5225;&#x8207;&#x5176;&#x4ED6;&#x578B;&#x5225;&#x4E4B;&#x9593;&#x7684;&#x8F49;&#x63DB;</h2>
 <p>&#x6211;&#x5011;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x6307;&#x6A19;&#x578B;&#x5225;&#x8207;&#x53C3;&#x8003;&#x578B;&#x5225;&#x4E4B;&#x9593;&#x9032;&#x884C;&#x8F49;&#x63DB;&#xFF0C;&#x5982;&#xFF1A;</p>
 <pre><code class="lang-crystal">array = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
@@ -2177,12 +2177,12 @@ array2 = ptr.as(<span class="hljs-constant">Array</span>(<span class="hljs-const
 array2.same?(array) <span class="hljs-comment">#=&gt; true</span>
 </code></pre>
 <p>&#x518D;&#x6B21;&#x5F37;&#x8ABF;&#xFF0C;&#x7531;&#x65BC;&#x6307;&#x6A19;&#x7684;&#x95DC;&#x4FC2;&#xFF0C;&#x4E0A;&#x8FF0;&#x4F8B;&#x5B50;&#x4E2D;&#x4E26;&#x4E0D;&#x6703;&#x9032;&#x884C;&#x6AA2;&#x67E5;&#x3002;</p>
-<p>&#x9019;&#x7A2E;&#x8F49;&#x578B;&#x5176;&#x5BE6;&#x6BD4;&#x524D;&#x4E00;&#x7A2E;&#x4F8B;&#x5B50;&#x66F4;&#x7F55;&#x898B;&#xFF0C;&#x4F46;&#x9019;&#x8B93;&#x4E00;&#x4E9B; Crystal &#x88E1;&#x7684;&#x6838;&#x5FC3;&#x578B;&#x5225;&#xFF08;&#x5982;&#x5B57;&#x4E32;&#xFF09;&#x5F97;&#x4EE5;&#x5BE6;&#x4F5C;&#xFF0C;&#x800C;&#x4E14;&#x4E5F;&#x5141;&#x8A31;&#x900F;&#x904E;&#x8F49;&#x63DB;&#x70BA; void &#x6307;&#x6A19;&#x5F8C;&#x50B3;&#x905E;&#x4E00;&#x500B;&#x53C3;&#x8003;&#x578B;&#x5225;&#x7D66; C &#x51FD;&#x5F0F;&#x3002;</p>
+<p>&#x9019;&#x7A2E;&#x8F49;&#x578B;&#x5176;&#x5BE6;&#x6BD4;&#x524D;&#x4E00;&#x7A2E;&#x4F8B;&#x5B50;&#x66F4;&#x7F55;&#x898B;&#xFF0C;&#x4F46;&#x9019;&#x8B93;&#x4E00;&#x4E9B; Crystal &#x88E1;&#x7684;&#x6838;&#x5FC3;&#x578B;&#x5225;&#xFF08;&#x5982;&#x5B57;&#x4E32;&#xFF09;&#x5F97;&#x4EE5;&#x5BE6;&#x4F5C;&#xFF0C;&#x800C;&#x4E14;&#x4E5F;&#x5141;&#x8A31;&#x900F;&#x904E;&#x8F49;&#x63DB;&#x70BA; void &#x6307;&#x6A19;&#x5F8C;&#x50B3;&#x905E;&#x4E00;&#x500B;&#x53C3;&#x8003;&#x578B;&#x5225;&#x7D66; C &#x51FD;&#x6578;&#x3002;</p>
 <h2 id="%E8%BD%89%E5%9E%8B%E7%82%BA%E6%9B%B4%E5%A4%A7%E7%9A%84%E5%9E%8B%E5%88%A5">&#x8F49;&#x578B;&#x70BA;&#x66F4;&#x5927;&#x7684;&#x578B;&#x5225;</h2>
-<p><code>as</code> &#x4E5F;&#x53EF;&#x4EE5;&#x88AB;&#x7528;&#x65BC;&#x8F49;&#x63DB;&#x70BA; <em>&#x66F4;&#x5927;&#x7684;</em> &#x578B;&#x5225;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<p><code>as</code> &#x4E5F;&#x53EF;&#x4EE5;&#x88AB;&#x7528;&#x65BC;&#x8F49;&#x63DB;&#x70BA;<em>&#x66F4;&#x5927;&#x7684;</em>&#x578B;&#x5225;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
 <pre><code class="lang-crystal">a = <span class="hljs-number">1</span>
 b = a.as(<span class="hljs-constant">Int32</span> | <span class="hljs-constant">Float64</span>)
-b <span class="hljs-comment">#:: Int32 | Float64</span>
+b <span class="hljs-comment"># : Int32 | Float64</span>
 </code></pre>
 <p>&#x4E0A;&#x9762;&#x7684;&#x7BC4;&#x4F8B;&#x770B;&#x8D77;&#x4F86;&#x53EF;&#x80FD;&#x4E0D;&#x662F;&#x5F88;&#x5BE6;&#x7528;&#xFF0C;&#x4F46;&#x537B;&#x5728;&#x5C0D;&#x61C9;&#x9663;&#x5217;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x6642;&#x975E;&#x5E38;&#x597D;&#x7528;&#xFF1A;</p>
 <pre><code class="lang-crystal">ary = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
@@ -2190,7 +2190,7 @@ b <span class="hljs-comment">#:: Int32 | Float64</span>
 <span class="hljs-comment"># &#x6211;&#x5011;&#x60F3;&#x8981;&#x5EFA;&#x7ACB;&#x4E00;&#x500B; Int32 | Float64 &#x7684;&#x9663;&#x5217; 1, 2, 3</span>
 ary2 = ary.map { |x| x.as(<span class="hljs-constant">Int32</span> | <span class="hljs-constant">Float64</span>) }
 
-ary2 <span class="hljs-comment">#:: Array(Int32 | Float64)</span>
+ary2 <span class="hljs-comment"># : Array(Int32 | Float64)</span>
 ary2 &lt;&lt; <span class="hljs-number">1.5</span> <span class="hljs-comment"># OK</span>
 </code></pre>
 <p><code>Array#map</code> &#x9019;&#x500B;&#x65B9;&#x6CD5;&#x4F7F;&#x7528;&#x4E86;&#x5340;&#x584A;&#x7684;&#x578B;&#x5225;&#x4F5C;&#x70BA;&#x9663;&#x5217;&#x7684;&#x6CDB;&#x578B;&#x578B;&#x5225;&#x3002;&#x6C92;&#x6709;&#x4F7F;&#x7528; <code>as</code> &#x6642;&#xFF0C;&#x63A8;&#x5B9A;&#x7684;&#x578B;&#x5225;&#x5C07;&#x6703;&#x662F; <code>Int32</code>&#xFF0C;&#x4E5F;&#x5C31;&#x8868;&#x793A;&#x6211;&#x5011;&#x7121;&#x6CD5;&#x589E;&#x52A0;&#x4E00;&#x500B; <code>Float64</code> &#x5143;&#x7D20;&#x9032;&#x53BB;&#x3002;</p>
