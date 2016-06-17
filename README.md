@@ -30,6 +30,8 @@ In type restrictions, generic type arguments and other places where a type is ex
 當使用在型別限制時，於任何泛型型別參數或是其他需要填寫型別的地方，「我們」也可以使用簡短的語法來表示序組的型別，這在型別語法一章中會解釋：
 ```
 
+* 使用相對路徑以及 .md 後綴來建立不同章節之間的連接。
+
 ## 翻譯進度
 
 目前上游：`bdd739595ab6ab607a29e3a3be2890d020cac809`
@@ -42,10 +44,10 @@ In type restrictions, generic type arguments and other places where a type is ex
 
 * [x] [簡介](_gitbook/README.md)
 * [x] [安裝](_gitbook/installation/README.md)
-   * [x] [在 Debian / Ubuntu 環境下安裝](_gitbook/installation/on_debian_and_ubuntu.md)
-   * [x] [在 RedHat / CentOS 環境下安裝](_gitbook/installation/on_redhat_and_centos.md)
+   * [x] [在 Debian／Ubuntu 環境下安裝](_gitbook/installation/on_debian_and_ubuntu.md)
+   * [x] [在 RedHat／CentOS 環境下安裝](_gitbook/installation/on_redhat_and_centos.md)
    * [x] [在 Arch Linux 環境下安裝](_gitbook/installation/on_arch_linux.md)
-   * [x] [在 Mac OSX 環境下使用 Homebrew 安裝](_gitbook/installation/on_mac_osx_using_homebrew.md)
+   * [ ] [在 Mac OSX 環境下使用 Homebrew 安裝](_gitbook/installation/on_mac_osx_using_homebrew.md)
    * [x] [使用 .tar.gz 檔案安裝](_gitbook/installation/from_a_targz.md)
    * [x] [從原始碼安裝](_gitbook/installation/from_source_repository.md)
 * [x] [使用編譯器](_gitbook/using_the_compiler/README.md)
