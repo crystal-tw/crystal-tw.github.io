@@ -12,8 +12,8 @@ git fetch upstream
 git checkout upstream/master
 git merge origin/translation --no-commit --no-edit --no-ff -s recursive -Xtheirs || true
 
-bundle exec rake docs docs:tidy
+bundle exec jekyll build
 
-git add -fA docs/
-git commit -m "rebuild docs at ${rev} [ci skip]" || true
+git add .
+git commit -m "Bulid at ${rev} [ci skip]" || true
 git push -q upstream HEAD:master
