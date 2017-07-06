@@ -47,7 +47,7 @@ version: 0.1.0
 
 To create a simple http server edit the `src/heroku101.cr` file and add the following content:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 # file: src/heroku101.cr
 require "http/server"
 
@@ -61,7 +61,7 @@ end
 
 puts "Listening on http://#{bind}:#{port}"
 server.listen
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 To build and run the program:
 
@@ -87,21 +87,21 @@ https://sleepy-thicket-16179.herokuapp.com/ | https://git.heroku.com/sleepy-thic
 
 The above command will generate a random app name. Check the [docs](https://devcenter.heroku.com/articles/creating-apps) to give your app a name from the beginning.
 
-Before deploying, we need to make a small change. Heroku randomly assigns a port number to be used by the app. Thanks to be buildpack, this will be informed in a `--port` option when running the application.
+Before deploying, we need to make a small change. Heroku randomly assigns a port number to be used by the app. Thanks to the buildpack, this will be informed in a `--port` option when running the application.
 
 So, add a `require "option_parser"` at the beginning of `src/heroku101.cr` and override the `port` variable default with:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 OptionParser.parse! do |opts|
   opts.on("-p PORT", "--port PORT", "define port to run server") do |opt|
     port = opt.to_i
   end
 end
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 The full `src/heroku101.cr` should be:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 # file: src/heroku101.cr
 require "http/server"
 require "option_parser"
@@ -122,7 +122,7 @@ end
 
 puts "Listening on http://#{bind}:#{port}"
 server.listen
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 To build and run with `--port` option:
 

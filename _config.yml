@@ -17,10 +17,17 @@ defaults:
     values:
       image: /images/icon.png
       layout: post
-#twitter:
-#  username: CrystalLanguage
+      is_post: true
+twitter:
+  username: CrystalLanguage
+
 highlighter: rouge
 markdown: kramdown
-exclude: ["*.haml", "Gemfile", "Gemfile.lock", "Rakefile", "travis-build.sh", "scripts/*.cr"]
+exclude: ["Gemfile", "Gemfile.lock", "Rakefile", "travis-build.sh", "scripts/*.cr", "vendor"]
 gems:
   - jekyll-seo-tag
+  - jekyll-assets
+  - jekyll-timeago
+
+google_calendar_api_key: 'AIzaSyCv-2Npqm0mwmwVCKX8xDPhwtP_8HwCWCE'
+google_calendar_id: '0s0pa4k3fov71e4itn79atlmeg@group.calendar.google.com'

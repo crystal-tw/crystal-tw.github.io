@@ -1,0 +1,24 @@
+{% assign navigation_pages = site.html_pages | sort: 'nav_order' %}
+{% for p in navigation_pages %}
+  {% unless p.exclude %}
+    <li>
+      <a href="{{ p.url }}" {% if p.url == page.url %}class="selected"{% endif %}>
+        {% if p.nav_title %}
+          {{ p.nav_title }}
+        {% else %}
+          {{ p.title }}
+        {% endif %}
+      </a>
+    </li>
+  {% endunless %}
+{% endfor %}
+<li>
+  <a href='http://tw.crystal-lang.org/docs/' target="_blank">入門文件</a>
+</li>
+<li>
+  <a href='https://crystal-lang.org/api/' target="_blank">API</a>
+</li>
+<li>
+  <a href='https://github.com/crystal-lang/crystal' target="_blank">GitHub</a>
+</li>
+

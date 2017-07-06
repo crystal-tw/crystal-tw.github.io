@@ -6,3 +6,6 @@ vendor/bundle
 .ruby-version
 .crystal
 .sass-cache
+.asset-cache
+.DS_store
+.idea

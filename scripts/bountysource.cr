@@ -22,7 +22,7 @@ module BountySource
       Array(SupportLevel).from_json(response)
     end
 
-    def supporters
+    def supporters(page)
       headers = HTTP::Headers{
         "Accept"        => "application/vnd.bountysource+json; version=2",
         "Authorization" => "token #{@token}",
@@ -30,7 +30,7 @@ module BountySource
         "Referer"       => "https://salt.bountysource.com/teams/crystal-lang/admin/supporters",
         "Origin"        => "https://salt.bountysource.com",
       }
-      response = @client.get("/supporters?order=monthly&per_page=200&team_slug=#{@team}", headers: headers).body
+      response = @client.get("/supporters?order=monthly&page=#{page}&per_page=50&team_slug=#{@team}", headers: headers).body
       Array(Supporters).from_json(response)
     end
 
@@ -55,6 +55,8 @@ module BountySource
       alltime_amount:  Float64,
       created_at:      String,
     })
+
+    def_equals_and_hash id
   end
 
   class SupportLevel
@@ -141,7 +143,15 @@ bountysource = BountySource::API.new(team, token)
 
 github = GitHub::API.new
 
-supporters = bountysource.supporters
+# paginate sponsors until repeat of empty page.
+supporters = [] of BountySource::Supporters
+page_index = 1
+while (page = bountysource.supporters(page_index)) &&
+      (new_supporters = page.select { |s| !supporters.includes?(s) }) &&
+      new_supporters.size > 0
+  supporters.concat(new_supporters)
+  page_index += 1
+end
 
 support_levels = bountysource.support_levels
 support_levels.select! { |s| s.status == "active" && s.owner.display_name != "Anonymous" }
@@ -190,8 +200,8 @@ support_levels.each do |support_level|
               else
                 raise "not implemented image type #{logo_request.content_type}"
               end
-        logo = "/images/sponsors/#{name.downcase.gsub(/\W/, "_")}.#{ext}"
-        local_file = logo[1..-1]
+        logo = "sponsors/#{name.downcase.gsub(/\W/, "_")}.#{ext}"
+        local_file = "_assets/img/#{logo}"
         unless File.exists?(local_file)
           File.open(local_file, "w") do |f|
             IO.copy logo_request.body_io, f
@@ -210,18 +220,18 @@ end
 
 sponsors.sort_by! { |s| {-s.this_month, -s.all_time, s.name.downcase} }.uniq!
 
-result = CSV.build do |csv|
-  csv.row "logo", "name", "url", "this_month", "all_time", "since", "level"
+File.open("#{__DIR__}/../_data/sponsors.csv", "w") do |file|
+  CSV.build(file) do |csv|
+    csv.row "logo", "name", "url", "this_month", "all_time", "since", "level"
 
-  sponsors.each do |sponsor|
-    csv.row (sponsor.logo unless sponsor.logo.empty?),
-      sponsor.name,
-      (sponsor.url unless sponsor.url.empty?),
-      sponsor.this_month.to_i,
-      sponsor.all_time.to_i,
-      sponsor.since.to_s("%b %-d, %Y"),
-      levels.find { |amount| amount <= sponsor.this_month.to_i }.not_nil!
+    sponsors.each do |sponsor|
+      csv.row (sponsor.logo unless sponsor.logo.empty?),
+        sponsor.name,
+        (sponsor.url unless sponsor.url.empty?),
+        sponsor.this_month.to_i,
+        sponsor.all_time.to_i,
+        sponsor.since.to_s("%b %-d, %Y"),
+        levels.find { |amount| amount <= sponsor.this_month.to_i }.not_nil!
+    end
   end
 end
-
-puts result
