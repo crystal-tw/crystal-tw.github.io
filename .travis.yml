@@ -6,7 +6,7 @@ cache:
     - vendor/bundle
 before_install: |
   bundle install --deployment --jobs=3 --retry=3
-script: test $TRAVIS_PULL_REQUEST != "false" || test $TRAVIS_BRANCH != "translation" || ./travis-build.sh
+script: test $TRAVIS_PULL_REQUEST != "false" || ./.travis-build.sh
 branches:
   only:
-    - translation
+    - master
