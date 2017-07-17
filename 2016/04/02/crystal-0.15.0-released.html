@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang='zh-Hant'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Crystal 0.15.0 released! - Crystal 程式語言 
+    </title>
+    <!-- Import Google Icon Font -->
+    <link href='https://fonts.googleapis.com/icon?family=Material+Icons|Roboto+Mono' rel='stylesheet'>
+    <link type="text/css" rel="stylesheet" href="/assets/stylesheet.css">
+    <link href='/feed.xml' rel='alternate' title='Atom 1.0' type='application/atom+xml'>
+    <link href='/favicon.png' rel='icon' type='image/png'>
+    <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+    <!-- Begin Jekyll SEO tag v1.4.0 -->
+<title>Crystal 0.15.0 released! - Crystal 程式語言</title>
+<meta property="og:title" content="Crystal 0.15.0 released!" />
+<meta name="description" content="Crystal 0.15.0 has been released!" />
+<meta property="og:description" content="Crystal 0.15.0 has been released!" />
+<link rel="canonical" href="http://crystal-tw.github.io/2016/04/02/crystal-0.15.0-released.html" />
+<meta property="og:url" content="http://crystal-tw.github.io/2016/04/02/crystal-0.15.0-released.html" />
+<meta property="og:site_name" content="Crystal 程式語言" />
+<meta property="og:image" content="http://crystal-tw.github.io/images/icon.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-04-02T00:00:00+00:00" />
+<link rel="next" href="http://crystal-tw.github.io/2016/05/05/crystal-0.16.0-released.html" title="Crystal 0.16.0 released!" />
+<link rel="prev" href="http://crystal-tw.github.io/2016/03/21/crystal-0.14.1-released.html" title="Crystal 0.14.1 released!" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@CrystalLanguage" />
+<meta name="twitter:creator" content="@asterite" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Crystal 0.15.0 released!",
+    "image": "http://crystal-tw.github.io/images/icon.png",
+    "datePublished": "2016-04-02T00:00:00+00:00",
+    "description": "Crystal 0.15.0 has been released!",
+    "logo": "http://crystal-tw.github.io/images/crystal-h.png",
+    "url": "http://crystal-tw.github.io/2016/04/02/crystal-0.15.0-released.html"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+    <!-- Let browser know website is optimized for mobile -->
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <script src='https://code.jquery.com/jquery-3.1.1.min.js' type='text/javascript'></script>
+  </head>
+  <body>
+    <div class="wrapper ">
+      <nav role='navigation'>
+  <div class='nav-wrapper no-select'>
+    
+      <a class='brand-logo' id='logo-container'>
+        <canvas height='120' id='logo-canvas' style='cursor:move' width='120'></canvas>
+      </a>
+    
+    <ul class='right hide-on-med-and-down' id='nav-desktop'>
+      
+
+  
+
+  
+    <li>
+      <a href="/" >
+        
+          Home
+        
+      </a>
+    </li>
+  
+
+  
+    <li>
+      <a href="/blog/" >
+        
+          Blog
+        
+      </a>
+    </li>
+  
+
+  
+    <li>
+      <a href="/sponsors/" >
+        
+          Sponsors
+        
+      </a>
+    </li>
+  
+
+  
+    <li>
+      <a href="/community/" >
+        
+          Community
+        
+      </a>
+    </li>
+  
+
+  
+    <li>
+      <a href="/media/" >
+        
+          Media
+        
+      </a>
+    </li>
+  
+
+<li>
+  <a href='http://tw.crystal-lang.org/docs/' target="_blank">入門文件</a>
+</li>
+<li>
+  <a href='https://crystal-lang.org/api/' target="_blank">API</a>
+</li>
+<li>
+  <a href='https://github.com/crystal-lang/crystal' target="_blank">GitHub</a>
+</li>
+
+
+    </ul>
+    <ul class='side-nav' id='nav-mobile'>
+      
+
+  
+
+  
+    <li>
+      <a href="/" >
+        
+          Home
+        
+      </a>
+    </li>
+  
+
+  
+    <li>
+      <a href="/blog/" >
+        
+          Blog
+        
+      </a>
+    </li>
+  
+
+  
+    <li>
+      <a href="/sponsors/" >
+        
+          Sponsors
+        
+      </a>
+    </li>
+  
+
+  
+    <li>
+      <a href="/community/" >
+        
+          Community
+        
+      </a>
+    </li>
+  
+
+  
+    <li>
+      <a href="/media/" >
+        
+          Media
+        
+      </a>
+    </li>
+  
+
+<li>
+  <a href='http://tw.crystal-lang.org/docs/' target="_blank">入門文件</a>
+</li>
+<li>
+  <a href='https://crystal-lang.org/api/' target="_blank">API</a>
+</li>
+<li>
+  <a href='https://github.com/crystal-lang/crystal' target="_blank">GitHub</a>
+</li>
+
+
+    </ul>
+    <a class='button-collapse' data-activates='nav-mobile' href='#'>
+      <i class='material-icons'>menu</i>
+    </a>
+  </div>
+</nav>
+
+      
+        <div class='post-header'>
+  <div class="container">
+    <div class='valign row'>
+      <div class="col m2"></div>
+      <div class="col s12 m9">
+        <div class="author small">
+          
+          
+            <img src="/assets/authors/asterite.jpg" width="360" height="360" alt="authors/asterite.jpg">
+          
+          
+            <span class="author_name">Ary Borenzweig</span>
+          
+          
+          
+            <span class="date">02 Apr 2016</span>
+          
+        </div>
+
+        <h1 class='title'>Crystal 0.15.0 released!</h1>
+      </div>
+      <div class="col m1"></div>
+    </div>
+  </div>
+</div>
+
+      
+      <main>
+        <div class="container">
+  <div class="row post-layout">
+    <div class="col m2 share">
+      <p class="title small share-title">Share</p>
+      <div class="share-list">
+        
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2F127.0.0.1%2F2016%2F04%2F02%2Fcrystal-0.15.0-released.html&text=Crystal+0.15.0+released%21&via=CrystalLanguage" target="_blank">
+          <div class="share-item"><i class="extra-icons twitter gray"></i></div>
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2F127.0.0.1%2F2016%2F04%2F02%2Fcrystal-0.15.0-released.html" target="_blank">
+          <div class="share-item"><i class="extra-icons facebook gray"></i></div>
+        </a>
+        <a href="https://plus.google.com/share?url=https%3A%2F%2F127.0.0.1%2F2016%2F04%2F02%2Fcrystal-0.15.0-released.html" target="_blank">
+          <div class="share-item"><i class="extra-icons google_plus gray"></i></div>
+          </a>
+      </div>
+    </div>
+
+    <div class="col s12 m9">
+      <p><a href="https://github.com/crystal-lang/crystal/releases/tag/0.15.0">Crystal 0.15.0</a> has been released!</p>
+
+<p>This is a small release where the most significant change is that now <code class="highlighter-rouge">!</code> and <code class="highlighter-rouge">nil?</code>
+have their meaning hardcoded in the language. To understand why this is important let’s look at a simple example.</p>
+
+<h2 id="nil-and-">nil? and !</h2>
+
+<p>The task is to write a program that prints the character number of an occurrence of a string
+inside another string, or print “Not found” if not found.</p>
+
+<p>One way to solve this is:</p>
+
+<div class="code_section">
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># `String#index` returns an Int32 if the index is found, or Nil if not</span>
+<span class="n">index</span> <span class="o">=</span> <span class="s2">"some_word"</span><span class="p">.</span><span class="nf">index</span><span class="p">(</span><span class="no">ARGV</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">if</span> <span class="n">index</span>
+  <span class="nb">puts</span> <span class="s2">"Found at character number </span><span class="si">#{</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">else</span>
+  <span class="nb">puts</span> <span class="s2">"Not found"</span>
+<span class="k">end</span></code></pre></figure>
+</div>
+
+<p>Note that in the above program the first character, for the user, is 1, the second is 2, etc.
+That’s why we need to add 1 to the index.</p>
+
+<p>The compiler understands that if <code class="highlighter-rouge">index</code> is truthy (not <code class="highlighter-rouge">nil</code> nor <code class="highlighter-rouge">false</code> nor a null pointer)
+then inside the <code class="highlighter-rouge">then</code> branch <code class="highlighter-rouge">index</code> can only be <code class="highlighter-rouge">Int32</code> so the operation <code class="highlighter-rouge">index + 1</code>
+compiles fine.</p>
+
+<p>Another way to write the same program is this:</p>
+
+<div class="code_section">
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">index</span> <span class="o">=</span> <span class="s2">"some_word"</span><span class="p">.</span><span class="nf">index</span><span class="p">(</span><span class="no">ARGV</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">if</span> <span class="o">!</span><span class="n">index</span>
+  <span class="nb">puts</span> <span class="s2">"Not found"</span>
+<span class="k">else</span>
+  <span class="nb">puts</span> <span class="s2">"Found at character number </span><span class="si">#{</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span></code></pre></figure>
+</div>
+
+<p>If you compile the above program in a previous version you will get an error:</p>
+
+<pre class="code">
+Error in ./file.cr:14: undefined method '+' for Nil (compile-time type is Int32?)
+
+  puts "Found at character number #{index + 1}"
+                                          ^
+</pre>
+
+<p>In this case it would seem obvious that in the <code class="highlighter-rouge">else</code> branch there’s no possible
+way <code class="highlighter-rouge">index</code> can be <code class="highlighter-rouge">nil</code>. However, because <code class="highlighter-rouge">!</code> was a regular method and anyone could
+redefine its meaning, the compiler couldn’t make this guarantee.</p>
+
+<p>Now <code class="highlighter-rouge">!</code> has its meaning hardcoded, which means that the last program compiles just fine.</p>
+
+<p>Yet another way to write the same program is this:</p>
+
+<div class="code_section">
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">index</span> <span class="o">=</span> <span class="s2">"some_word"</span><span class="p">.</span><span class="nf">index</span><span class="p">(</span><span class="no">ARGV</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">if</span> <span class="n">index</span><span class="p">.</span><span class="nf">nil?</span>
+  <span class="nb">puts</span> <span class="s2">"Not found"</span>
+<span class="k">else</span>
+  <span class="nb">puts</span> <span class="s2">"Found at character number </span><span class="si">#{</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span></code></pre></figure>
+</div>
+
+<p>As before, if you compile this with a previous version you will get the same error,
+for the same reason: you could redefine the meaning of <code class="highlighter-rouge">nil?</code>.</p>
+
+<p>Starting from 0.15.0 <code class="highlighter-rouge">nil?</code> has its meaning hardcoded, so the above program again works
+just fine.</p>
+
+<p>This is super important because now the language is much more intuitive and correct.
+And there are many Ruby programmers that use <code class="highlighter-rouge">nil?</code>, a lot, and if they start using
+Crystal there won’t be any surprises in their expectations about what the compiler should
+understand in these cases.</p>
+
+<p>Some others ways to write this program:</p>
+
+<div class="code_section">
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># 1</span>
+<span class="k">if</span> <span class="o">!</span><span class="n">index</span><span class="p">.</span><span class="nf">nil?</span>
+  <span class="nb">puts</span> <span class="s2">"Found at character number </span><span class="si">#{</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">else</span>
+  <span class="nb">puts</span> <span class="s2">"Not found"</span>
+<span class="k">end</span>
+
+<span class="c1"># 2</span>
+<span class="k">if</span> <span class="n">index</span><span class="p">.</span><span class="nf">is_a?</span><span class="p">(</span><span class="no">Int32</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Found at character number </span><span class="si">#{</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">else</span>
+  <span class="nb">puts</span> <span class="s2">"Not found"</span>
+<span class="k">end</span>
+
+<span class="c1"># 3</span>
+<span class="k">if</span> <span class="o">!</span><span class="n">index</span><span class="p">.</span><span class="nf">is_a?</span><span class="p">(</span><span class="no">Int32</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Not found"</span>
+<span class="k">else</span>
+  <span class="nb">puts</span> <span class="s2">"Found at character number </span><span class="si">#{</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span></code></pre></figure>
+</div>
+
+<p>All of the above will now work just fine, as one would expect.</p>
+
+<p>We originally considered removing <code class="highlighter-rouge">nil?</code> from the standard library and language, but <code class="highlighter-rouge">Nil</code>
+is such a fundamental type that it makes sense to have good support for handling it.</p>
+
+<p>And remember: <code class="highlighter-rouge">nil</code> is not a <a href="http://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare">billion dollar mistake</a>
+if the compiler takes care of making sure you always handle it.</p>
+
+<h2 id="better-playground">Better Playground</h2>
+
+<p>The <a href="http://crystal-lang.org/2016/03/21/crystal-0.14.1-released.html#the-playground">playground</a> (<code class="highlighter-rouge">crystal play</code>)
+had many bug fixes, stablizations and improvements. For example runtime exceptions are now pointed
+out in the source code.</p>
+
+<p>There’s also a new “Workbook” tab/section that can list files you put in a <code class="highlighter-rouge">playground</code> directory,
+to use it as a tutorial for others, or maybe when giving a talk. These files can be HTML,
+Markdown or Crystal files.</p>
+
+<p>For example, <a href="https://github.com/will">@will</a> gave a talk about Crystal a few days ago
+at <a href="https://ruby.onales.com/speakers#introducingthecrystalprogramminglanguage-by-willleinweber">Ruby on Ales</a>
+and used it to introduce the language. Make sure to <a href="https://github.com/will/roa2016_crystal">check out his repo</a>
+and try it out.</p>
+
+    </div>
+    <div class="col m1"></div>
+  </div>
+
+  <div class="row disqus">
+    <div class="col m2"></div>
+    <div class="col s12 m9" id='disqus_thread'>
+      <p><a href="https://github.com/crystal-lang/crystal/releases/tag/0.15.0">Crystal 0.15.0</a> has been released!</p>
+
+<p>This is a small release where the most significant change is that now <code class="highlighter-rouge">!</code> and <code class="highlighter-rouge">nil?</code>
+have their meaning hardcoded in the language. To understand why this is important let’s look at a simple example.</p>
+
+<h2 id="nil-and-">nil? and !</h2>
+
+<p>The task is to write a program that prints the character number of an occurrence of a string
+inside another string, or print “Not found” if not found.</p>
+
+<p>One way to solve this is:</p>
+
+<div class="code_section">
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># `String#index` returns an Int32 if the index is found, or Nil if not</span>
+<span class="n">index</span> <span class="o">=</span> <span class="s2">"some_word"</span><span class="p">.</span><span class="nf">index</span><span class="p">(</span><span class="no">ARGV</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">if</span> <span class="n">index</span>
+  <span class="nb">puts</span> <span class="s2">"Found at character number </span><span class="si">#{</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">else</span>
+  <span class="nb">puts</span> <span class="s2">"Not found"</span>
+<span class="k">end</span></code></pre></figure>
+</div>
+
+<p>Note that in the above program the first character, for the user, is 1, the second is 2, etc.
+That’s why we need to add 1 to the index.</p>
+
+<p>The compiler understands that if <code class="highlighter-rouge">index</code> is truthy (not <code class="highlighter-rouge">nil</code> nor <code class="highlighter-rouge">false</code> nor a null pointer)
+then inside the <code class="highlighter-rouge">then</code> branch <code class="highlighter-rouge">index</code> can only be <code class="highlighter-rouge">Int32</code> so the operation <code class="highlighter-rouge">index + 1</code>
+compiles fine.</p>
+
+<p>Another way to write the same program is this:</p>
+
+<div class="code_section">
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">index</span> <span class="o">=</span> <span class="s2">"some_word"</span><span class="p">.</span><span class="nf">index</span><span class="p">(</span><span class="no">ARGV</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">if</span> <span class="o">!</span><span class="n">index</span>
+  <span class="nb">puts</span> <span class="s2">"Not found"</span>
+<span class="k">else</span>
+  <span class="nb">puts</span> <span class="s2">"Found at character number </span><span class="si">#{</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span></code></pre></figure>
+</div>
+
+<p>If you compile the above program in a previous version you will get an error:</p>
+
+<pre class="code">
+Error in ./file.cr:14: undefined method '+' for Nil (compile-time type is Int32?)
+
+  puts "Found at character number #{index + 1}"
+                                          ^
+</pre>
+
+<p>In this case it would seem obvious that in the <code class="highlighter-rouge">else</code> branch there’s no possible
+way <code class="highlighter-rouge">index</code> can be <code class="highlighter-rouge">nil</code>. However, because <code class="highlighter-rouge">!</code> was a regular method and anyone could
+redefine its meaning, the compiler couldn’t make this guarantee.</p>
+
+<p>Now <code class="highlighter-rouge">!</code> has its meaning hardcoded, which means that the last program compiles just fine.</p>
+
+<p>Yet another way to write the same program is this:</p>
+
+<div class="code_section">
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">index</span> <span class="o">=</span> <span class="s2">"some_word"</span><span class="p">.</span><span class="nf">index</span><span class="p">(</span><span class="no">ARGV</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">if</span> <span class="n">index</span><span class="p">.</span><span class="nf">nil?</span>
+  <span class="nb">puts</span> <span class="s2">"Not found"</span>
+<span class="k">else</span>
+  <span class="nb">puts</span> <span class="s2">"Found at character number </span><span class="si">#{</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span></code></pre></figure>
+</div>
+
+<p>As before, if you compile this with a previous version you will get the same error,
+for the same reason: you could redefine the meaning of <code class="highlighter-rouge">nil?</code>.</p>
+
+<p>Starting from 0.15.0 <code class="highlighter-rouge">nil?</code> has its meaning hardcoded, so the above program again works
+just fine.</p>
+
+<p>This is super important because now the language is much more intuitive and correct.
+And there are many Ruby programmers that use <code class="highlighter-rouge">nil?</code>, a lot, and if they start using
+Crystal there won’t be any surprises in their expectations about what the compiler should
+understand in these cases.</p>
+
+<p>Some others ways to write this program:</p>
+
+<div class="code_section">
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># 1</span>
+<span class="k">if</span> <span class="o">!</span><span class="n">index</span><span class="p">.</span><span class="nf">nil?</span>
+  <span class="nb">puts</span> <span class="s2">"Found at character number </span><span class="si">#{</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">else</span>
+  <span class="nb">puts</span> <span class="s2">"Not found"</span>
+<span class="k">end</span>
+
+<span class="c1"># 2</span>
+<span class="k">if</span> <span class="n">index</span><span class="p">.</span><span class="nf">is_a?</span><span class="p">(</span><span class="no">Int32</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Found at character number </span><span class="si">#{</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">else</span>
+  <span class="nb">puts</span> <span class="s2">"Not found"</span>
+<span class="k">end</span>
+
+<span class="c1"># 3</span>
+<span class="k">if</span> <span class="o">!</span><span class="n">index</span><span class="p">.</span><span class="nf">is_a?</span><span class="p">(</span><span class="no">Int32</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Not found"</span>
+<span class="k">else</span>
+  <span class="nb">puts</span> <span class="s2">"Found at character number </span><span class="si">#{</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span></code></pre></figure>
+</div>
+
+<p>All of the above will now work just fine, as one would expect.</p>
+
+<p>We originally considered removing <code class="highlighter-rouge">nil?</code> from the standard library and language, but <code class="highlighter-rouge">Nil</code>
+is such a fundamental type that it makes sense to have good support for handling it.</p>
+
+<p>And remember: <code class="highlighter-rouge">nil</code> is not a <a href="http://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare">billion dollar mistake</a>
+if the compiler takes care of making sure you always handle it.</p>
+
+<h2 id="better-playground">Better Playground</h2>
+
+<p>The <a href="http://crystal-lang.org/2016/03/21/crystal-0.14.1-released.html#the-playground">playground</a> (<code class="highlighter-rouge">crystal play</code>)
+had many bug fixes, stablizations and improvements. For example runtime exceptions are now pointed
+out in the source code.</p>
+
+<p>There’s also a new “Workbook” tab/section that can list files you put in a <code class="highlighter-rouge">playground</code> directory,
+to use it as a tutorial for others, or maybe when giving a talk. These files can be HTML,
+Markdown or Crystal files.</p>
+
+<p>For example, <a href="https://github.com/will">@will</a> gave a talk about Crystal a few days ago
+at <a href="https://ruby.onales.com/speakers#introducingthecrystalprogramminglanguage-by-willleinweber">Ruby on Ales</a>
+and used it to introduce the language. Make sure to <a href="https://github.com/will/roa2016_crystal">check out his repo</a>
+and try it out.</p>
+
+    </div>
+    <div class="col m1"></div>
+  </div>
+</div>
+<script>
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'crystal-lang'; // required: replace example with your forum shortname
+  var disqus_identifier = '/2016/04/02/crystal-0.15.0-released';
+  var disqus_title = "Crystal 0.15.0 released!";
+  var disqus_url = "http://crystal-lang.org//2016/04/02/crystal-0.15.0-released.html";
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>
+  Please enable JavaScript to view the
+  <a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a>
+</noscript>
+<a class='dsq-brlink' href='http://disqus.com'>
+  comments powered by
+  <span class='logo-disqus'>Disqus</span>
+</a>
+
+      </main>
+      <footer>
+  <div class="row">
+    <div class="col s12 m12 l6 crystal" style="margin-top: -.5em;">
+      Crystal is licensed under the Apache License,
+      <a href='https://www.apache.org/licenses/LICENSE-2.0' target='_blank'>
+        Version 2.0
+      </a>
+			<br />
+			本站正體中文（臺灣）翻譯由 
+			<a href='https://github.com/crystal-tw' target='_blank'>
+				Crystal-TW
+			</a>
+			社群貢獻。
+    </div>
+    <div class="col s12 m12 l6 manas right-align black-text">
+      Crystal language, born &amp; raised at
+      <a href="https://manas.tech" target="_blank" class="black-text">Manas</a>
+      <a href="https://manas.tech" target="_blank" class="logo">
+        <i class="manas"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <script id="dsq-count-scr" src="//crystal-lang.disqus.com/count.js" async></script>
+    <script type="text/javascript" src="/assets/bundle.js"></script>
+    <!-- Disable original GA temporary
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42353458-1', 'auto');
+  ga('send', 'pageview');
+</script>
+-->
+
+  </body>
+</html>

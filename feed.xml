@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Crystal 程式語言</title>
+    <description>Ruby 風格但可編譯的程式語言</description>
+    <link>http://crystal-tw.github.io</link>
+    <atom:link href="http://crystal-tw.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Announcing Crystal CodeCamp SF2017</title>
+        
+          <description>&lt;p&gt;We’re happy to announce that the Crystal team is coming to San Francisco!&lt;/p&gt;
+
+</description>
+        
+                          <pubDate>Thu, 23 Mar 2017 00:00:00 +0000</pubDate>
+        <link>http://crystal-tw.github.io/2017/03/23/announcing-crystal-codecamp-sf2017.html</link>
+        <guid isPermaLink="true">http://crystal-tw.github.io/2017/03/23/announcing-crystal-codecamp-sf2017.html</guid>
+      </item>
+    
+      <item>
+        <title>State of Crystal at 0.21</title>
+        
+          <description>&lt;p&gt;With the release of &lt;a href=&quot;https://groups.google.com/d/msg/crystal-lang/sGxeIxlLKX4/VFIM-iTECwAJ&quot;&gt;version 0.21&lt;/a&gt;, we wanted to share with you the state of Crystal development so far this year, aiming towards a &lt;a href=&quot;https://crystal-lang.org/2016/12/29/crystal-new-year-resolutions-for-2017-1-0.html&quot;&gt;1.0 version&lt;/a&gt; by the end of the year.&lt;/p&gt;
+
+</description>
+        
+                          <pubDate>Fri, 24 Feb 2017 00:00:00 +0000</pubDate>
+        <link>http://crystal-tw.github.io/2017/02/24/state-of-crystal-at-0.21.html</link>
+        <guid isPermaLink="true">http://crystal-tw.github.io/2017/02/24/state-of-crystal-at-0.21.html</guid>
+      </item>
+    
+      <item>
+        <title>The Charly programming language</title>
+        
+          <description>&lt;p&gt;&lt;em&gt;This post is the first from our guest writers series. If you have built something awesome using Crystal and want to share your experience here on the blog, &lt;a href=&quot;http://twitter.com/intent/tweet?text=@CrystalLanguage%20I%20want%20to%20write%20about...&quot;&gt;let us know&lt;/a&gt;!&lt;/em&gt;&lt;/p&gt;
+
+</description>
+        
+                          <pubDate>Fri, 06 Jan 2017 00:00:00 +0000</pubDate>
+        <link>http://crystal-tw.github.io/2017/01/06/the-charly-programming-language.html</link>
+        <guid isPermaLink="true">http://crystal-tw.github.io/2017/01/06/the-charly-programming-language.html</guid>
+      </item>
+    
+      <item>
+        <title>Crystal new year resolutions for 2017: 1.0</title>
+        
+          <description>&lt;p&gt;Crystal has gone a long way since we &lt;a href=&quot;https://manas.tech/blog/2016/04/01/the-story-behind-crystal.html&quot;&gt;started it over five years ago&lt;/a&gt;. What was once an experiment to see if it was possible to have a compiled yet Ruby-like language, is now a trending language with over &lt;a href=&quot;https://github.com/crystal-lang/crystal/stargazers&quot;&gt;7,000 github stargazers&lt;/a&gt; and almost &lt;a href=&quot;http://crystalshards.xyz/&quot;&gt;1,400 shards&lt;/a&gt;. Its popularity has risen considerably in the last few years, and we are incredibly proud to see something we have built resonating so much with the development community.&lt;/p&gt;
+
+</description>
+        
+                          <pubDate>Thu, 29 Dec 2016 00:00:00 +0000</pubDate>
+        <link>http://crystal-tw.github.io/2016/12/29/crystal-new-year-resolutions-for-2017-1-0.html</link>
+        <guid isPermaLink="true">http://crystal-tw.github.io/2016/12/29/crystal-new-year-resolutions-for-2017-1-0.html</guid>
+      </item>
+    
+      <item>
+        <title>INSERT INTO shard VALUES (&quot;crystal-db&quot;)</title>
+        
+          <description>&lt;p&gt;Using a database is a really common task. For each kind of database there is a shard or library needed. When there is no common API to talk to a database, building more advanced shards like orm or migrations is harder. Either you end up supporting just a driver or you need to create a whole ad-hoc solution. Lacking a common api also means that when changing from one DB to another you will need to learn a different api. You already unavoidably need to deal with some SQL differences: &lt;code class=&quot;highlighter-rouge&quot;&gt;?&lt;/code&gt;/&lt;code class=&quot;highlighter-rouge&quot;&gt;$1&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;TOP&lt;/code&gt;/&lt;code class=&quot;highlighter-rouge&quot;&gt;LIMIT&lt;/code&gt;, etc.&lt;/p&gt;
+
+</description>
+        
+                          <pubDate>Mon, 26 Dec 2016 00:00:00 +0000</pubDate>
+        <link>http://crystal-tw.github.io/2016/12/26/insert-into-shard-values-crystal-db.html</link>
+        <guid isPermaLink="true">http://crystal-tw.github.io/2016/12/26/insert-into-shard-values-crystal-db.html</guid>
+      </item>
+    
+      <item>
+        <title>Crystal 0.20.0 released!</title>
+        
+          <description>&lt;p&gt;&lt;a href=&quot;https://github.com/crystal-lang/crystal/releases/tag/0.20.0&quot;&gt;Crystal 0.20.0&lt;/a&gt; has been released!&lt;/p&gt;
+
+</description>
+        
+                          <pubDate>Tue, 22 Nov 2016 00:00:00 +0000</pubDate>
+        <link>http://crystal-tw.github.io/2016/11/22/crystal-0.20.0-released.html</link>
+        <guid isPermaLink="true">http://crystal-tw.github.io/2016/11/22/crystal-0.20.0-released.html</guid>
+      </item>
+    
+      <item>
+        <title>A story of compromises and types</title>
+        
+          <description>&lt;p&gt;Let’s play with an immutable Queue type. We want to:&lt;/p&gt;
+
+</description>
+        
+                          <pubDate>Fri, 09 Sep 2016 00:00:00 +0000</pubDate>
+        <link>http://crystal-tw.github.io/2016/09/09/a-story-of-compromises-and-types.html</link>
+        <guid isPermaLink="true">http://crystal-tw.github.io/2016/09/09/a-story-of-compromises-and-types.html</guid>
+      </item>
+    
+      <item>
+        <title>Fibonacci benchmark</title>
+        
+          <description>&lt;p&gt;When trying out Crystal it’s tempting, and very fun, to write small benchmarks to see
+how the language’s performance compares to other languages. Because of its syntax,
+comparing with Ruby is usually the simplest thing to do. Many times we can even
+use the same code.&lt;/p&gt;
+
+</description>
+        
+                          <pubDate>Fri, 15 Jul 2016 00:00:00 +0000</pubDate>
+        <link>http://crystal-tw.github.io/2016/07/15/fibonacci-benchmark.html</link>
+        <guid isPermaLink="true">http://crystal-tw.github.io/2016/07/15/fibonacci-benchmark.html</guid>
+      </item>
+    
+      <item>
+        <title>Split the repo!</title>
+        
+          <description>&lt;p&gt;Crystal is made of many parts. Some of them migrated to other repositories this week.&lt;/p&gt;
+
+</description>
+        
+                          <pubDate>Tue, 28 Jun 2016 00:00:00 +0000</pubDate>
+        <link>http://crystal-tw.github.io/2016/06/28/split-the-repo.html</link>
+        <guid isPermaLink="true">http://crystal-tw.github.io/2016/06/28/split-the-repo.html</guid>
+      </item>
+    
+      <item>
+        <title>Crystal 0.18.0 released!</title>
+        
+          <description>&lt;p&gt;&lt;a href=&quot;https://github.com/crystal-lang/crystal/releases/tag/0.18.0&quot;&gt;Crystal 0.18.0&lt;/a&gt; has been released!&lt;/p&gt;
+
+</description>
+        
+                          <pubDate>Tue, 14 Jun 2016 00:00:00 +0000</pubDate>
+        <link>http://crystal-tw.github.io/2016/06/14/crystal-0.18.0-released.html</link>
+        <guid isPermaLink="true">http://crystal-tw.github.io/2016/06/14/crystal-0.18.0-released.html</guid>
+      </item>
+    
+  </channel>
+</rss>

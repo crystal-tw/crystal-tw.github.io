@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang='zh-Hant'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Crystal 程式語言 
+    </title>
+    <!-- Import Google Icon Font -->
+    <link href='https://fonts.googleapis.com/icon?family=Material+Icons|Roboto+Mono' rel='stylesheet'>
+    <link type="text/css" rel="stylesheet" href="/assets/stylesheet.css">
+    <link href='/feed.xml' rel='alternate' title='Atom 1.0' type='application/atom+xml'>
+    <link href='/favicon.png' rel='icon' type='image/png'>
+    <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+    <!-- Begin Jekyll SEO tag v1.4.0 -->
+<title>Crystal - Crystal 程式語言</title>
+<meta property="og:title" content="Crystal" />
+<meta name="description" content="飛快如 C，靈巧似 Ruby" />
+<meta property="og:description" content="飛快如 C，靈巧似 Ruby" />
+<link rel="canonical" href="http://crystal-tw.github.io/" />
+<meta property="og:url" content="http://crystal-tw.github.io/" />
+<meta property="og:site_name" content="Crystal 程式語言" />
+<meta property="og:image" content="http://crystal-tw.github.io/images/icon.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@CrystalLanguage" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Crystal 程式語言",
+    "headline": "Crystal",
+    "image": "http://crystal-tw.github.io/images/icon.png",
+    "description": "飛快如 C，靈巧似 Ruby",
+    "logo": "http://crystal-tw.github.io/images/crystal-h.png",
+    "url": "http://crystal-tw.github.io/"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+    <!-- Let browser know website is optimized for mobile -->
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <script src='https://code.jquery.com/jquery-3.1.1.min.js' type='text/javascript'></script>
+  </head>
+  <body>
+    <div class="wrapper main">
+      <nav role='navigation'>
+  <div class='nav-wrapper no-select'>
+    
+    <ul class='right hide-on-med-and-down' id='nav-desktop'>
+      
+
+  
+
+  
+    <li>
+      <a href="/" class="selected">
+        
+          Home
+        
+      </a>
+    </li>
+  
+
+  
+    <li>
+      <a href="/blog/" >
+        
+          Blog
+        
+      </a>
+    </li>
+  
+
+  
+    <li>
+      <a href="/sponsors/" >
+        
+          Sponsors
+        
+      </a>
+    </li>
+  
+
+  
+    <li>
+      <a href="/community/" >
+        
+          Community
+        
+      </a>
+    </li>
+  
+
+  
+    <li>
+      <a href="/media/" >
+        
+          Media
+        
+      </a>
+    </li>
+  
+
+<li>
+  <a href='http://tw.crystal-lang.org/docs/' target="_blank">入門文件</a>
+</li>
+<li>
+  <a href='https://crystal-lang.org/api/' target="_blank">API</a>
+</li>
+<li>
+  <a href='https://github.com/crystal-lang/crystal' target="_blank">GitHub</a>
+</li>
+
+
+    </ul>
+    <ul class='side-nav' id='nav-mobile'>
+      
+
+  
+
+  
+    <li>
+      <a href="/" class="selected">
+        
+          Home
+        
+      </a>
+    </li>
+  
+
+  
+    <li>
+      <a href="/blog/" >
+        
+          Blog
+        
+      </a>
+    </li>
+  
+
+  
+    <li>
+      <a href="/sponsors/" >
+        
+          Sponsors
+        
+      </a>
+    </li>
+  
+
+  
+    <li>
+      <a href="/community/" >
+        
+          Community
+        
+      </a>
+    </li>
+  
+
+  
+    <li>
+      <a href="/media/" >
+        
+          Media
+        
+      </a>
+    </li>
+  
+
+<li>
+  <a href='http://tw.crystal-lang.org/docs/' target="_blank">入門文件</a>
+</li>
+<li>
+  <a href='https://crystal-lang.org/api/' target="_blank">API</a>
+</li>
+<li>
+  <a href='https://github.com/crystal-lang/crystal' target="_blank">GitHub</a>
+</li>
+
+
+    </ul>
+    <a class='button-collapse' data-activates='nav-mobile' href='#'>
+      <i class='material-icons'>menu</i>
+    </a>
+  </div>
+</nav>
+
+      
+        <div class='header-section valign-wrapper no-select'>
+  <div id="delaunay"></div>
+  <div id='content'>
+    <div class='valign center-align'>
+      
+        <div id="crystal-container">
+          <svg id="Crystal" data-name="Crystal" height="42" width="230" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 42"><title>crystal</title><path d="M27.93,34.73l.64,5.45a42,42,0,0,1-12.29,1.51q-9,0-12.63-4.64T0,21Q0,9.58,3.65,4.95T16.28.31A45.27,45.27,0,0,1,27.76,1.59l-.69,5.51q-5-.4-10.78-.41-5,0-6.81,3T7.65,21q0,8.23,1.82,11.27t6.81,3A91.36,91.36,0,0,0,27.93,34.73ZM64.79,41H57.08l-3.19-12.4A4.51,4.51,0,0,0,49.26,25l-7.18-.06V41H34.88V1Q40,.48,49.43.49,57,.49,60.18,3t3.16,9.19q0,4.63-1.74,7.1t-5.74,3v.29a7,7,0,0,1,3.25,1.85,7.82,7.82,0,0,1,2.09,4.06ZM42.07,19h7.18q3.88-.06,5.3-1.39t1.42-5Q56,9,54.56,7.73t-5.3-1.28H42.07Zm44.74,8.46V41H79.56V27.37L66.41,1h7.65l7.3,15.53q.4.93,1.62,4.81h.46q1.22-3.88,1.62-4.81L92.37,1H99.9Zm32-2.32-8.06-2.55a11.15,11.15,0,0,1-6.2-4.2A13.22,13.22,0,0,1,102.69,11q0-6.55,3-8.64T116.42.31A51.36,51.36,0,0,1,129,1.65l-.46,5.16q-6.6-.23-11.88-.23-4,0-5.33.78T110,11.15a5.07,5.07,0,0,0,1,3.51,8.38,8.38,0,0,0,3.51,1.82l7.71,2.38q4.58,1.45,6.4,4.26a13.37,13.37,0,0,1,1.83,7.39q0,6.61-3.13,8.9t-11.07,2.29a66.11,66.11,0,0,1-13-1.27l.46-5.33q10.14.23,12.69.23,4,0,5.33-.93T123,30.45a5.31,5.31,0,0,0-.9-3.54A7.64,7.64,0,0,0,118.8,25.17ZM166,7.21H153.68V41h-7.3V7.21H134.15V1H166Zm23.76,22.49H174.95L171.65,41h-7.42l12-38.07A2.43,2.43,0,0,1,178.83,1h7.07a2.43,2.43,0,0,1,2.61,1.91l12,38.07h-7.42Zm-1.74-6L184,9.93q-.81-3.13-.87-3.42h-1.56l-.93,3.42-4,13.79ZM212.38,1V31.66a3.52,3.52,0,0,0,.75,2.58,3.83,3.83,0,0,0,2.66.72h13.91l.29,5.62q-5.68.52-15.88.52-9,0-9-8.29V1Z"/></svg>
+        </div>
+        <div class='brand-logo' id='logo-container'>
+          <canvas height='300' id='logo-canvas' style='cursor:move' width='300'></canvas>
+        </div>
+        <div class='subtitle'>飛快如 C，靈巧似 Ruby</div>
+        <p class="main-actions">
+          <a href="http://tw.crystal-lang.org/docs/installation/" target="_blank" class="btn btn-large btn-flat">立即安裝</a>
+          <a href="http://tw.crystal-lang.org/docs/overview/" target="_blank" class="btn btn-large btn-flat">入門文件</a>
+          <a href="https://play.crystal-lang.org/#/cr" target="_blank" class="btn btn-large btn-flat">線上試玩</a>
+        </p>
+      
+    </div>
+  </div>
+</div>
+
+      
+      <main>
+        <div class="banner center bountysource no-select">
+    <div class="flag">
+      <a href="https://www.bountysource.com/teams/crystal-lang/fundraisers/702-crystal-language" target="_blank">
+				群眾募資中 —— 在
+        <img src="/assets/bountysource.png" class="bountysource-logo">
+				上一同協助 Crystal 進入 Production 階段
+        </a>
+    </div>
+</div>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col s12">
+      <h2>語法</h2>
+      <p>語法源自於 Ruby，這使得我們能夠更自然的閱讀及撰寫 Crystal，且對於有經驗的 Ruby 開發者們在學習曲線上更有助益。</p>
+      <div class='code_section'>
+        <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># 簡易 HTTP 伺服器</span>
+<span class="nb">require</span> <span class="s2">"http/server"</span>
+
+<span class="n">server</span> <span class="o">=</span> <span class="no">HTTP</span><span class="o">::</span><span class="no">Server</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">8080</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">context</span><span class="o">|</span>
+  <span class="n">context</span><span class="p">.</span><span class="nf">response</span><span class="p">.</span><span class="nf">content_type</span> <span class="o">=</span> <span class="s2">"text/plain"</span>
+  <span class="n">context</span><span class="p">.</span><span class="nf">response</span><span class="p">.</span><span class="nf">print</span> <span class="s2">"Hello world, got </span><span class="si">#{</span><span class="n">context</span><span class="p">.</span><span class="nf">request</span><span class="p">.</span><span class="nf">path</span><span class="si">}</span><span class="s2">!"</span>
+<span class="k">end</span>
+
+<span class="nb">puts</span> <span class="s2">"Listening on http://127.0.0.1:8080"</span>
+<span class="n">server</span><span class="p">.</span><span class="nf">listen</span></code></pre></figure>
+
+      </div>
+      <p class="read-more"><a href="http://tw.crystal-lang.org/docs/overview/">&gt; 現在就跟著入門文件學習如何撰寫 Crystal</a></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <h2>編譯式</h2>
+      <p>Crystal 是一個需要經過編譯的語言，這讓它可以以低成本的記憶體來執行飛快的程式。 並以 LLVM 為基石可以使 Crystal 在建置過程中進行最佳化。</p>
+      <h3>網頁伺服器吞吐量比較<hr class="squares"/></h3>
+      <p id="benchmark"></p>
+      <p class="read-more">資料來源: <a href="https://github.com/costajob/app-servers#results" target="_blank">costajobs/app-servers</a><br />
+      <a href="http://tw.crystal-lang.org/docs/using_the_compiler/">&gt; 學習如何使用 Crystal 編譯器</a></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <h2>型別系統</h2>
+      <p>Crystal 使用了靜態型別檢查，所有的型別錯誤都會在編譯時期被捕捉，而不是在執行時期才進行檢查。 另外，為了保持語言的純淨度，Crystal 還內建了型別推導的能力，在大部分的情況下，我們不需要自行宣告型別類型。</p>
+      <div class="code_section">
+        <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">shout</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+  <span class="c1"># 注意不論是 Int32 或是 String 都擁有 `to_s` 的方法</span>
+  <span class="n">x</span><span class="p">.</span><span class="nf">to_s</span><span class="p">.</span><span class="nf">upcase</span>
+<span class="k">end</span>
+
+<span class="n">foo</span> <span class="o">=</span> <span class="no">ENV</span><span class="p">[</span><span class="s2">"FOO"</span><span class="p">]?</span> <span class="o">||</span> <span class="mi">10</span>
+
+<span class="n">typeof</span><span class="p">(</span><span class="n">foo</span><span class="p">)</span> <span class="c1"># =&gt; (Int32 | String)</span>
+<span class="n">typeof</span><span class="p">(</span><span class="n">shout</span><span class="p">(</span><span class="n">foo</span><span class="p">))</span> <span class="c1"># =&gt; String</span></code></pre></figure>
+
+      </div>
+      <p class="read-more"><a href="http://tw.crystal-lang.org/docs/syntax_and_semantics/types_and_methods.html">&gt; 閱讀更多關於 Crystal 型別系統的資訊</a></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <h2>空參照自動檢查</h2>
+      <p>在 Crystal 裡的所有型別都是非空的，所有允許空值的變數都被宣告成預期型別與空值型別的集合型別。 因此，編譯器會在編譯時期自動地檢查空參照來避免著名的「<a href="https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare" target="_blank">The Billion Dollar Mistake 問題</a>」。</p>
+      <div class="code_section">
+        <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">if</span> <span class="nb">rand</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span>
+  <span class="n">my_string</span> <span class="o">=</span> <span class="s2">"hello world"</span>
+<span class="k">end</span>
+
+<span class="nb">puts</span> <span class="n">my_string</span><span class="p">.</span><span class="nf">upcase</span></code></pre></figure>
+
+      </div>
+      <p>執行結果如下：</p>
+      <div class="code_section">
+      <figure class="highlight console">
+        <pre><code>
+$ crystal hello_world.cr
+Error in hello_world.cr:5: undefined method 'upcase' for <span class="type">Nil (compile-time type is (String | Nil))</span>
+
+puts my_string.upcase
+               <span class="marker">^~~~~~</span>
+</code></pre>
+
+      </figure>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <h2>巨集</h2>
+			<p>針對 Metaprogramming，Crystal 亦內建了強大的巨集機制來實現模板機制以及在編譯時期檢閱 AST 與型別的功能，甚至於能夠在巨集中執行獨立的外部程式。</p>
+      <div class="code_section">
+        <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">Object</span>
+  <span class="k">def</span> <span class="nf">has_instance_var?</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span> <span class="p">:</span> <span class="no">Bool</span>
+    <span class="p">{{</span> <span class="vi">@type</span><span class="p">.</span><span class="nf">instance_vars</span><span class="p">.</span><span class="nf">map</span> <span class="o">&amp;</span><span class="p">.</span><span class="nf">name</span><span class="p">.</span><span class="nf">stringify</span> <span class="p">}}.</span><span class="nf">includes?</span> <span class="nb">name</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">person</span> <span class="o">=</span> <span class="no">Person</span><span class="p">.</span><span class="nf">new</span> <span class="s2">"John"</span><span class="p">,</span> <span class="mi">30</span>
+<span class="n">person</span><span class="p">.</span><span class="nf">has_instance_var?</span><span class="p">(</span><span class="s2">"name"</span><span class="p">)</span> <span class="c1">#=&gt; true</span>
+<span class="n">person</span><span class="p">.</span><span class="nf">has_instance_var?</span><span class="p">(</span><span class="s2">"birthday"</span><span class="p">)</span> <span class="c1">#=&gt; false</span></code></pre></figure>
+
+      </div>
+      <p class="read-more"><a href="http://tw.crystal-lang.org/docs/syntax_and_semantics/macros.html">&gt; 瞭解更多關於巨集的說明</a></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <h2>併發模型</h2>
+      <p>Crystal 使用了一種稱為 Fiber 的綠色執行緒來實作併發模型。 如同 Go 或 Clojure，Fiber 能夠透過使用 Channel 來互相溝通而避免使用 SHM 與鎖。</p>
+      <div class="code_section">
+        <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">channel</span> <span class="o">=</span> <span class="no">Channel</span><span class="p">(</span><span class="no">Int32</span><span class="p">).</span><span class="nf">new</span>
+<span class="n">total_lines</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">files</span> <span class="o">=</span> <span class="no">Dir</span><span class="p">.</span><span class="nf">glob</span><span class="p">(</span><span class="s2">"*.txt"</span><span class="p">)</span>
+
+<span class="n">files</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">f</span><span class="o">|</span>
+  <span class="n">spawn</span> <span class="k">do</span>
+    <span class="n">lines</span> <span class="o">=</span> <span class="no">File</span><span class="p">.</span><span class="nf">read</span><span class="p">(</span><span class="n">f</span><span class="p">).</span><span class="nf">lines</span><span class="p">.</span><span class="nf">size</span>
+    <span class="n">channel</span><span class="p">.</span><span class="nf">send</span> <span class="n">lines</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">files</span><span class="p">.</span><span class="nf">size</span><span class="p">.</span><span class="nf">times</span> <span class="k">do</span>
+  <span class="n">total_lines</span> <span class="o">+=</span> <span class="n">channel</span><span class="p">.</span><span class="nf">receive</span>
+<span class="k">end</span>
+
+<span class="nb">puts</span> <span class="n">total_lines</span></code></pre></figure>
+
+      </div>
+      <p class="read-more"><a href="http://tw.crystal-lang.org/docs/guides/concurrency.html">&gt; 更多有關 Crystal 中併發模型的說明</a></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <h2>C 函式庫綁紮</h2>
+      <p>Crystal 亦提供了簡單的語法來呼叫原生函式庫，如此一來我們便能減少在 Crystal 上重新實作的必要性。</p>
+      <div class="code_section">
+      <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># 以下為使用 GMP 來實作的 BigInt 的片段</span>
+<span class="err">@</span><span class="p">[</span><span class="no">Link</span><span class="p">(</span><span class="s2">"gmp"</span><span class="p">)]</span>
+<span class="n">lib</span> <span class="no">LibGMP</span>
+  <span class="k">alias</span> <span class="no">Int</span> <span class="o">=</span> <span class="no">LibC</span><span class="o">::</span><span class="no">Int</span>
+  <span class="k">alias</span> <span class="no">ULong</span> <span class="o">=</span> <span class="no">LibC</span><span class="o">::</span><span class="no">ULong</span>
+
+  <span class="n">struct</span> <span class="no">MPZ</span>
+    <span class="n">_mp_alloc</span> <span class="p">:</span> <span class="no">Int32</span>
+    <span class="n">_mp_size</span> <span class="p">:</span> <span class="no">Int32</span>
+    <span class="n">_mp_d</span> <span class="p">:</span> <span class="no">ULong</span><span class="o">*</span>
+  <span class="k">end</span>
+
+  <span class="n">fun</span> <span class="n">init_set_str</span> <span class="o">=</span> <span class="n">__gmpz_init_set_str</span><span class="p">(</span><span class="n">rop</span> <span class="p">:</span> <span class="no">MPZ</span><span class="o">*</span><span class="p">,</span> <span class="n">str</span> <span class="p">:</span> <span class="no">UInt8</span><span class="o">*</span><span class="p">,</span> <span class="n">base</span> <span class="p">:</span> <span class="no">Int</span><span class="p">)</span> <span class="p">:</span> <span class="no">Int</span>
+  <span class="n">fun</span> <span class="n">cmp</span> <span class="o">=</span> <span class="n">__gmpz_cmp</span><span class="p">(</span><span class="n">op1</span> <span class="p">:</span> <span class="no">MPZ</span><span class="o">*</span><span class="p">,</span> <span class="n">op2</span> <span class="p">:</span> <span class="no">MPZ</span><span class="o">*</span><span class="p">)</span> <span class="p">:</span> <span class="no">Int</span>
+<span class="k">end</span>
+
+<span class="n">struct</span> <span class="no">BigInt</span> <span class="o">&lt;</span> <span class="no">Int</span>
+  <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">str</span> <span class="p">:</span> <span class="no">String</span><span class="p">,</span> <span class="n">base</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span>
+    <span class="n">err</span> <span class="o">=</span> <span class="no">LibGMP</span><span class="p">.</span><span class="nf">init_set_str</span><span class="p">(</span><span class="n">out</span> <span class="vi">@mpz</span><span class="p">,</span> <span class="n">str</span><span class="p">,</span> <span class="n">base</span><span class="p">)</span>
+    <span class="k">raise</span> <span class="no">ArgumentError</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s2">"invalid BigInt: </span><span class="si">#{</span><span class="n">str</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span> <span class="k">if</span> <span class="n">err</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">&lt;</span><span class="o">=&gt;</span><span class="p">(</span><span class="n">other</span> <span class="p">:</span> <span class="no">BigInt</span><span class="p">)</span>
+    <span class="no">LibGMP</span><span class="p">.</span><span class="nf">cmp</span><span class="p">(</span><span class="n">mpz</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></figure>
+
+      </div>
+      <p class="read-more"><a href="http://tw.crystal-lang.org/docs/syntax_and_semantics/c_bindings/">&gt; 瞭解如何與 C 函式庫互動</a></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <h2>相依性</h2>
+      <p>我們稱 Crystal 函式庫為 Shards，不同於常見的套件管理機制，Shards 避免了中心化管理而是透過 Git 來派送。 透過內建的指令我們可以輕易地透過編輯 YAML 格式的設定檔來描述套件之間的相依並從各自的倉庫抓取套件。</p>
+      <div class="code_section">
+      <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="s">name</span><span class="pi">:</span> <span class="s">my-project</span>
+<span class="s">version</span><span class="pi">:</span> <span class="s">0.1</span>
+<span class="s">license</span><span class="pi">:</span> <span class="s">MIT</span>
+
+<span class="s">crystal</span><span class="pi">:</span> <span class="s">0.21.0</span>
+
+<span class="s">dependencies</span><span class="pi">:</span>
+  <span class="s">mysql</span><span class="pi">:</span>
+    <span class="s">github</span><span class="pi">:</span> <span class="s">crystal-lang/crystal-mysql</span>
+    <span class="s">version</span><span class="pi">:</span> <span class="s">~&gt; 0.3.1</span></code></pre></figure>
+
+      </div>
+      <p class="read-more"><a href="https://github.com/crystal-lang/shards">&gt; 參閱 Shards 的 GitHub 頁面以瞭解更多</a></p>
+    </div>
+  </div>
+
+	<!--
+  <div class="row center">
+    <div class="col s12">
+      <div class="flag">
+        <h3>Crystal top sponsors</h3>
+        <a href="/sponsors">Meet all</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <div class='sponsors-list'>
+        <a href='https://manas.tech/' target='_blank' class="sponsor">
+          <img src="/assets/manas-orange.svg" alt="manas-orange.svg">
+          <span class="small">Manas Technology Solutions</span>
+        </a>
+        <a href='https://openredis.com' target='_blank' class="sponsor">
+          <img src="/assets/home/openredis.svg" alt="home/openredis.svg">
+          <span class="small">openredis</span>
+        </a>
+        <a href='https://fly.io' target='_blank' class="sponsor">
+          <img src="/assets/sponsors/fly_io_.png" width="400" height="400" alt="sponsors/fly_io_.png">
+          <span class="small">Fly.io</span>
+        </a>
+      </div>
+    </div>
+	</div>
+  <hr class="fullwidth">
+	-->
+  <div class="row center">
+    <div class="col s12">
+      <div class="flag">
+        <h3>以下資訊若未即時更新請至</h3>
+        <a href="https://crystal-lang.org">原文網站</a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12">
+      <h2>Articles from our blog</h2>
+      
+      
+      <div class="row blog-post">
+  <div class="col s12">
+      
+      
+        <div class="author small">
+          <img src="/assets/authors/mdavid.jpg" width="360" height="360" alt="authors/mdavid.jpg">
+          <span class="author_name">María Inti David</span>
+          
+            
+            
+              <span class="date">23 Mar 2017</span>
+            
+          
+        </div>
+      
+
+    <a href="/2017/03/23/announcing-crystal-codecamp-sf2017.html">
+      <h3 class="title">Announcing Crystal CodeCamp SF2017</h3>
+      <p class="summary"></p>
+    </a>
+
+    <p>
+      <i class="material-icons">chat_bubble_outline</i>
+      <span class="disqus-comment-count" data-disqus-identifier="/2017/03/23/announcing-crystal-codecamp-sf2017"></span>
+    </p>
+    <hr class="squares" />
+  </div>
+</div>
+
+      
+      <div class="row blog-post">
+  <div class="col s12">
+      
+      
+        <div class="author small">
+          <img src="/assets/authors/spalladino.jpg" width="360" height="360" alt="authors/spalladino.jpg">
+          <span class="author_name">Santiago Palladino</span>
+          
+            
+            
+              <span class="date">24 Feb 2017</span>
+            
+          
+        </div>
+      
+
+    <a href="/2017/02/24/state-of-crystal-at-0.21.html">
+      <h3 class="title">State of Crystal at 0.21</h3>
+      <p class="summary">What did we do since new year?</p>
+    </a>
+
+    <p>
+      <i class="material-icons">chat_bubble_outline</i>
+      <span class="disqus-comment-count" data-disqus-identifier="/2017/02/24/state-of-crystal-at-0.21"></span>
+    </p>
+    <hr class="squares" />
+  </div>
+</div>
+
+      
+      <div class="row blog-post">
+  <div class="col s12">
+      
+      
+        <div class="author small">
+          <img src="/assets/authors/lschutz.jpg" width="400" height="400" alt="authors/lschutz.jpg">
+          <span class="author_name">Leonard Schütz</span>
+          
+            
+            
+              <span class="date">06 Jan 2017</span>
+            
+          
+        </div>
+      
+
+    <a href="/2017/01/06/the-charly-programming-language.html">
+      <h3 class="title">The Charly programming language</h3>
+      <p class="summary">Guest blog post by Leonard Schütz</p>
+    </a>
+
+    <p>
+      <i class="material-icons">chat_bubble_outline</i>
+      <span class="disqus-comment-count" data-disqus-identifier="/2017/01/06/the-charly-programming-language"></span>
+    </p>
+    <hr class="squares" />
+  </div>
+</div>
+
+      
+      <p><a href="/blog">More articles</a></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <h2>Release Notes</h2>
+      <table class="bordered no-underline">
+        <tbody>
+          
+          
+            <tr>
+              <td></td>
+              <td><a href="/2016/11/22/crystal-0.20.0-released.html">
+                Crystal 0.20.0 released!
+              </a></td>
+              <td>22 Nov 2016</td>
+          
+            <tr>
+              <td></td>
+              <td><a href="/2016/06/14/crystal-0.18.0-released.html">
+                Crystal 0.18.0 released!
+              </a></td>
+              <td>14 Jun 2016</td>
+          
+            <tr>
+              <td></td>
+              <td><a href="/2016/05/17/crystal-0.17.0-released.html">
+                Crystal 0.17.0 released!
+              </a></td>
+              <td>17 May 2016</td>
+          
+            <tr>
+              <td></td>
+              <td><a href="/2016/05/05/crystal-0.16.0-released.html">
+                Crystal 0.16.0 released!
+              </a></td>
+              <td>05 May 2016</td>
+          
+            <tr>
+              <td></td>
+              <td><a href="/2016/04/02/crystal-0.15.0-released.html">
+                Crystal 0.15.0 released!
+              </a></td>
+              <td>02 Apr 2016</td>
+          
+            <tr>
+              <td></td>
+              <td><a href="/2016/03/21/crystal-0.14.1-released.html">
+                Crystal 0.14.1 released!
+              </a></td>
+              <td>21 Mar 2016</td>
+          
+            <tr>
+              <td></td>
+              <td><a href="/2016/03/07/crystal-0.13.0-released.html">
+                Crystal 0.13.0 released!
+              </a></td>
+              <td>07 Mar 2016</td>
+          
+            <tr>
+              <td></td>
+              <td><a href="/2016/02/16/crystal-0.12.0-released.html">
+                Crystal 0.12.0 released!
+              </a></td>
+              <td>16 Feb 2016</td>
+          
+            <tr>
+              <td></td>
+              <td><a href="/2016/01/23/crystal-0.11.0-released.html">
+                Crystal 0.11.0 released!
+              </a></td>
+              <td>23 Jan 2016</td>
+          
+            <tr>
+              <td></td>
+              <td><a href="/2015/12/23/crystal-0.10.0-released.html">
+                Crystal 0.10.0 released!
+              </a></td>
+              <td>23 Dec 2015</td>
+          
+        </tbody>
+      </table>
+      <p><a href="/blog#release_notes">More release notes</a></p>
+    </div>
+  </div>
+
+  <div class="row center">
+    <div class="col s12">
+      <div class="flag">
+				<h3>社群資源</h3>
+        <a href="/community">更多……</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <div class='row community-list center'>
+        <div class="col s12 m12 l6">
+          <a href='https://github.com/crystal-tw/crystal-tw.github.io' target='_blank' class="item">
+            <span class="small">正體中文（臺灣）翻譯計劃</span>
+            <i class="extra-icons github"></i>
+            <span class="with_icon">crystal-tw/crystal-tw.github.io</span>
+          </a>
+        </div>
+        <div class="col s12 m12 l6">
+          <a href='https://gitter.im/crystal-tw/crystal-tw.github.io' target='_blank' class="item">
+            <span class="small">Crystal-TW 聊天室</span>
+            <i class="extra-icons gitter"></i>
+            <span class="with_icon">crystal-tw/crystal-tw.github.io</span>
+          </a>
+        </div>
+        <div class="col s12 m12 l3">
+          <a href='https://github.com/crystal-lang/crystal/' target='_blank' class="item">
+            <span class="small">程式碼倉庫</span>
+            <i class="extra-icons github"></i>
+            <span class="with_icon">crystal-lang/crystal</span>
+          </a>
+        </div>
+        <div class="col s12 m12 l3">
+          <a href='https://groups.google.com/forum/#!forum/crystal-lang' target='_blank' class="item">
+            <span class="small">討論區 [英]</span>
+            <i class="extra-icons google"></i>
+            <span class="with_icon">crystal-lang</span>
+          </a>
+        </div>
+        <div class="col s12 m12 l3">
+          <a href='https://gitter.im/crystal-lang/crystal' target='_blank' class="item">
+            <span class="small">聊天室 [英]</span>
+            <i class="extra-icons gitter"></i>
+            <span class="with_icon">crystal-lang/crystal</span>
+          </a>
+        </div>
+        <div class="col s12 m12 l3">
+          <a href='https://twitter.com/CrystalLanguage' target='_blank' class="item">
+            <span class="small">官方動態更新 [英]</span>
+            <i class="extra-icons twitter"></i>
+            <span class="with_icon">@CrystalLanguage</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://d3js.org/d3.v3.min.js"></script>
+
+      </main>
+      <footer>
+  <div class="row">
+    <div class="col s12 m12 l6 crystal" style="margin-top: -.5em;">
+      Crystal is licensed under the Apache License,
+      <a href='https://www.apache.org/licenses/LICENSE-2.0' target='_blank'>
+        Version 2.0
+      </a>
+			<br />
+			本站正體中文（臺灣）翻譯由 
+			<a href='https://github.com/crystal-tw' target='_blank'>
+				Crystal-TW
+			</a>
+			社群貢獻。
+    </div>
+    <div class="col s12 m12 l6 manas right-align black-text">
+      Crystal language, born &amp; raised at
+      <a href="https://manas.tech" target="_blank" class="black-text">Manas</a>
+      <a href="https://manas.tech" target="_blank" class="logo">
+        <i class="manas"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <script id="dsq-count-scr" src="//crystal-lang.disqus.com/count.js" async></script>
+    <script type="text/javascript" src="/assets/bundle.js"></script>
+    <!-- Disable original GA temporary
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42353458-1', 'auto');
+  ga('send', 'pageview');
+</script>
+-->
+
+  </body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang='zh-Hant'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Split the repo! - Crystal 程式語言 
+    </title>
+    <!-- Import Google Icon Font -->
+    <link href='https://fonts.googleapis.com/icon?family=Material+Icons|Roboto+Mono' rel='stylesheet'>
+    <link type="text/css" rel="stylesheet" href="/assets/stylesheet.css">
+    <link href='/feed.xml' rel='alternate' title='Atom 1.0' type='application/atom+xml'>
+    <link href='/favicon.png' rel='icon' type='image/png'>
+    <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+    <!-- Begin Jekyll SEO tag v1.4.0 -->
+<title>Split the repo! - Crystal 程式語言</title>
+<meta property="og:title" content="Split the repo!" />
+<meta name="description" content="Crystal is made of many parts. Some of them migrated to other repositories this week." />
+<meta property="og:description" content="Crystal is made of many parts. Some of them migrated to other repositories this week." />
+<link rel="canonical" href="http://crystal-tw.github.io/2016/06/28/split-the-repo.html" />
+<meta property="og:url" content="http://crystal-tw.github.io/2016/06/28/split-the-repo.html" />
+<meta property="og:site_name" content="Crystal 程式語言" />
+<meta property="og:image" content="http://crystal-tw.github.io/images/icon.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-06-28T00:00:00+00:00" />
+<link rel="next" href="http://crystal-tw.github.io/2016/07/15/fibonacci-benchmark.html" title="Fibonacci benchmark" />
+<link rel="prev" href="http://crystal-tw.github.io/2016/06/14/crystal-0.18.0-released.html" title="Crystal 0.18.0 released!" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@CrystalLanguage" />
+<meta name="twitter:creator" content="@bcardiff" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Split the repo!",
+    "image": "http://crystal-tw.github.io/images/icon.png",
+    "datePublished": "2016-06-28T00:00:00+00:00",
+    "description": "Crystal is made of many parts. Some of them migrated to other repositories this week.",
+    "logo": "http://crystal-tw.github.io/images/crystal-h.png",
+    "url": "http://crystal-tw.github.io/2016/06/28/split-the-repo.html"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+    <!-- Let browser know website is optimized for mobile -->
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <script src='https://code.jquery.com/jquery-3.1.1.min.js' type='text/javascript'></script>
+  </head>
+  <body>
+    <div class="wrapper ">
+      <nav role='navigation'>
+  <div class='nav-wrapper no-select'>
+    
+      <a class='brand-logo' id='logo-container'>
+        <canvas height='120' id='logo-canvas' style='cursor:move' width='120'></canvas>
+      </a>
+    
+    <ul class='right hide-on-med-and-down' id='nav-desktop'>
+      
+
+  
+
+  
+    <li>
+      <a href="/" >
+        
+          Home
+        
+      </a>
+    </li>
+  
+
+  
+    <li>
+      <a href="/blog/" >
+        
+          Blog
+        
+      </a>
+    </li>
+  
+
+  
+    <li>
+      <a href="/sponsors/" >
+        
+          Sponsors
+        
+      </a>
+    </li>
+  
+
+  
+    <li>
+      <a href="/community/" >
+        
+          Community
+        
+      </a>
+    </li>
+  
+
+  
+    <li>
+      <a href="/media/" >
+        
+          Media
+        
+      </a>
+    </li>
+  
+
+<li>
+  <a href='http://tw.crystal-lang.org/docs/' target="_blank">入門文件</a>
+</li>
+<li>
+  <a href='https://crystal-lang.org/api/' target="_blank">API</a>
+</li>
+<li>
+  <a href='https://github.com/crystal-lang/crystal' target="_blank">GitHub</a>
+</li>
+
+
+    </ul>
+    <ul class='side-nav' id='nav-mobile'>
+      
+
+  
+
+  
+    <li>
+      <a href="/" >
+        
+          Home
+        
+      </a>
+    </li>
+  
+
+  
+    <li>
+      <a href="/blog/" >
+        
+          Blog
+        
+      </a>
+    </li>
+  
+
+  
+    <li>
+      <a href="/sponsors/" >
+        
+          Sponsors
+        
+      </a>
+    </li>
+  
+
+  
+    <li>
+      <a href="/community/" >
+        
+          Community
+        
+      </a>
+    </li>
+  
+
+  
+    <li>
+      <a href="/media/" >
+        
+          Media
+        
+      </a>
+    </li>
+  
+
+<li>
+  <a href='http://tw.crystal-lang.org/docs/' target="_blank">入門文件</a>
+</li>
+<li>
+  <a href='https://crystal-lang.org/api/' target="_blank">API</a>
+</li>
+<li>
+  <a href='https://github.com/crystal-lang/crystal' target="_blank">GitHub</a>
+</li>
+
+
+    </ul>
+    <a class='button-collapse' data-activates='nav-mobile' href='#'>
+      <i class='material-icons'>menu</i>
+    </a>
+  </div>
+</nav>
+
+      
+        <div class='post-header'>
+  <div class="container">
+    <div class='valign row'>
+      <div class="col m2"></div>
+      <div class="col s12 m9">
+        <div class="author small">
+          
+          
+            <img src="/assets/authors/bcardiff.jpg" width="360" height="360" alt="authors/bcardiff.jpg">
+          
+          
+            <span class="author_name">Brian J. Cardiff</span>
+          
+          
+          
+            <span class="date">28 Jun 2016</span>
+          
+        </div>
+
+        <h1 class='title'>Split the repo!</h1>
+      </div>
+      <div class="col m1"></div>
+    </div>
+  </div>
+</div>
+
+      
+      <main>
+        <div class="container">
+  <div class="row post-layout">
+    <div class="col m2 share">
+      <p class="title small share-title">Share</p>
+      <div class="share-list">
+        
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2F127.0.0.1%2F2016%2F06%2F28%2Fsplit-the-repo.html&text=Split+the+repo%21&via=CrystalLanguage" target="_blank">
+          <div class="share-item"><i class="extra-icons twitter gray"></i></div>
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2F127.0.0.1%2F2016%2F06%2F28%2Fsplit-the-repo.html" target="_blank">
+          <div class="share-item"><i class="extra-icons facebook gray"></i></div>
+        </a>
+        <a href="https://plus.google.com/share?url=https%3A%2F%2F127.0.0.1%2F2016%2F06%2F28%2Fsplit-the-repo.html" target="_blank">
+          <div class="share-item"><i class="extra-icons google_plus gray"></i></div>
+          </a>
+      </div>
+    </div>
+
+    <div class="col s12 m9">
+      <p>Crystal is made of many parts. Some of them migrated to other repositories this week.</p>
+
+<p>This will allow better organization, project infrastructure, and even better acknowledgement of contributions.</p>
+
+<p>Lets do a quick review of some artifacts, projects and repos where you might want to contribute.</p>
+
+<h2 id="crystal-compiler-std-and-tools">Crystal compiler, std and tools</h2>
+
+<p><a href="https://github.com/crystal-lang/crystal">crystal</a> is of course where the compiler and the standard library reside, among other tools shipped with the compiler: init, docs, spec, format, play, etc.</p>
+
+<h2 id="dependency-manager">Dependency manager</h2>
+
+<p><a href="https://github.com/crystal-lang/shards">shards</a> is our dependency manager. That thing that allows you to use 3rd parties shards.</p>
+
+<h2 id="website">Website</h2>
+
+<p><a href="https://github.com/crystal-lang/crystal-website">crystal-website</a> is a <a href="http://jekyllrb.com">jekyll</a> project where posts are written, sponsors are listed and other public resources can be accessed at <a href="http://crystal-lang.org">crystal-lang.org</a>.</p>
+
+<h2 id="book">Book</h2>
+
+<p><a href="https://github.com/crystal-lang/crystal-book">crystal-book</a> is a gitbook project that serves as introduction and manual to the language. After every commit in master a copy of the book is published in <a href="/docs">/docs</a>.</p>
+
+<p>There have been already translations of many languages of the book: <a href="http://ru.crystal-lang.org/docs/">ru</a>, <a href="http://br.crystal-lang.org/docs/">br</a>, <a href="http://ja.crystal-lang.org/docs/">ja</a>, <a href="http://tw.crystal-lang.org/docs/">tw</a>. Thanks everybody for making crystal speak your language ♥.</p>
+
+<p>Now that it is on its own repo it might be easier to keep changes up to date.</p>
+
+<h2 id="api-documentation">API documentation</h2>
+
+<p><a href="/api/">api</a> is the reference documentation of crystal standard library. The source? Well, it is in the main <a href="https://github.com/crystal-lang/crystal">crystal repo</a> like in <a href="https://github.com/crystal-lang/crystal/blob/master/src/array.cr">src/array.cr</a>.</p>
+
+<p>If you jump to <a href="/api/master/">/api/master/</a> you can view the reference for the code in master branch.</p>
+
+<p><strong>TIP:</strong> Did you know that for your own shard <code class="highlighter-rouge">crystal docs</code> will generate those nicely pages to describe it. So others will know how to use your shard. ♥</p>
+
+    </div>
+    <div class="col m1"></div>
+  </div>
+
+  <div class="row disqus">
+    <div class="col m2"></div>
+    <div class="col s12 m9" id='disqus_thread'>
+      <p>Crystal is made of many parts. Some of them migrated to other repositories this week.</p>
+
+<p>This will allow better organization, project infrastructure, and even better acknowledgement of contributions.</p>
+
+<p>Lets do a quick review of some artifacts, projects and repos where you might want to contribute.</p>
+
+<h2 id="crystal-compiler-std-and-tools">Crystal compiler, std and tools</h2>
+
+<p><a href="https://github.com/crystal-lang/crystal">crystal</a> is of course where the compiler and the standard library reside, among other tools shipped with the compiler: init, docs, spec, format, play, etc.</p>
+
+<h2 id="dependency-manager">Dependency manager</h2>
+
+<p><a href="https://github.com/crystal-lang/shards">shards</a> is our dependency manager. That thing that allows you to use 3rd parties shards.</p>
+
+<h2 id="website">Website</h2>
+
+<p><a href="https://github.com/crystal-lang/crystal-website">crystal-website</a> is a <a href="http://jekyllrb.com">jekyll</a> project where posts are written, sponsors are listed and other public resources can be accessed at <a href="http://crystal-lang.org">crystal-lang.org</a>.</p>
+
+<h2 id="book">Book</h2>
+
+<p><a href="https://github.com/crystal-lang/crystal-book">crystal-book</a> is a gitbook project that serves as introduction and manual to the language. After every commit in master a copy of the book is published in <a href="/docs">/docs</a>.</p>
+
+<p>There have been already translations of many languages of the book: <a href="http://ru.crystal-lang.org/docs/">ru</a>, <a href="http://br.crystal-lang.org/docs/">br</a>, <a href="http://ja.crystal-lang.org/docs/">ja</a>, <a href="http://tw.crystal-lang.org/docs/">tw</a>. Thanks everybody for making crystal speak your language ♥.</p>
+
+<p>Now that it is on its own repo it might be easier to keep changes up to date.</p>
+
+<h2 id="api-documentation">API documentation</h2>
+
+<p><a href="/api/">api</a> is the reference documentation of crystal standard library. The source? Well, it is in the main <a href="https://github.com/crystal-lang/crystal">crystal repo</a> like in <a href="https://github.com/crystal-lang/crystal/blob/master/src/array.cr">src/array.cr</a>.</p>
+
+<p>If you jump to <a href="/api/master/">/api/master/</a> you can view the reference for the code in master branch.</p>
+
+<p><strong>TIP:</strong> Did you know that for your own shard <code class="highlighter-rouge">crystal docs</code> will generate those nicely pages to describe it. So others will know how to use your shard. ♥</p>
+
+    </div>
+    <div class="col m1"></div>
+  </div>
+</div>
+<script>
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'crystal-lang'; // required: replace example with your forum shortname
+  var disqus_identifier = '/2016/06/28/split-the-repo';
+  var disqus_title = "Split the repo!";
+  var disqus_url = "http://crystal-lang.org//2016/06/28/split-the-repo.html";
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>
+  Please enable JavaScript to view the
+  <a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a>
+</noscript>
+<a class='dsq-brlink' href='http://disqus.com'>
+  comments powered by
+  <span class='logo-disqus'>Disqus</span>
+</a>
+
+      </main>
+      <footer>
+  <div class="row">
+    <div class="col s12 m12 l6 crystal" style="margin-top: -.5em;">
+      Crystal is licensed under the Apache License,
+      <a href='https://www.apache.org/licenses/LICENSE-2.0' target='_blank'>
+        Version 2.0
+      </a>
+			<br />
+			本站正體中文（臺灣）翻譯由 
+			<a href='https://github.com/crystal-tw' target='_blank'>
+				Crystal-TW
+			</a>
+			社群貢獻。
+    </div>
+    <div class="col s12 m12 l6 manas right-align black-text">
+      Crystal language, born &amp; raised at
+      <a href="https://manas.tech" target="_blank" class="black-text">Manas</a>
+      <a href="https://manas.tech" target="_blank" class="logo">
+        <i class="manas"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <script id="dsq-count-scr" src="//crystal-lang.disqus.com/count.js" async></script>
+    <script type="text/javascript" src="/assets/bundle.js"></script>
+    <!-- Disable original GA temporary
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42353458-1', 'auto');
+  ga('send', 'pageview');
+</script>
+-->
+
+  </body>
+</html>
