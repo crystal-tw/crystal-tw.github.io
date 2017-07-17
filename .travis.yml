@@ -9,4 +9,4 @@ before_install: |
 script: test $TRAVIS_PULL_REQUEST != "false" || ./.travis-build.sh
 branches:
   only:
-    - master
+    - translation
