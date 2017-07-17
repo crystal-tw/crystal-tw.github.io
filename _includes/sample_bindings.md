@@ -1,5 +1,5 @@
 {% highlight ruby %}
-# Fragment of the BigInt implementation that uses GMP
+# 以下為使用 GMP 來實作的 BigInt 的片段
 @[Link("gmp")]
 lib LibGMP
   alias Int = LibC::Int

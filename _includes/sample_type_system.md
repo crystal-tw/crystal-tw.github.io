@@ -1,6 +1,6 @@
 {% highlight ruby %}
 def shout(x)
-  # Notice that both Int32 and String respond_to `to_s`
+  # 注意不論是 Int32 或是 String 都擁有 `to_s` 的方法
   x.to_s.upcase
 end
 

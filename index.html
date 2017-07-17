@@ -9,8 +9,9 @@ custom_body_classes:
 <div class="banner center bountysource no-select">
     <div class="flag">
       <a href="https://www.bountysource.com/teams/crystal-lang/fundraisers/702-crystal-language" target="_blank">
-        Fund Crystal and help it become production-ready at
+				群眾募資中 —— 在
         <img src="{{ 'bountysource.png' | asset_path }}" class="bountysource-logo">
+				上一同協助 Crystal 進入 Production 階段
         </a>
     </div>
 </div>
@@ -19,45 +20,45 @@ custom_body_classes:
 
   <div class="row">
     <div class="col s12">
-      <h2>Syntax</h2>
-      <p>Crystal’s syntax is heavily inspired by Ruby’s, so it feels natural to read and easy to write, and has the added benefit of a lower learning curve for experienced Ruby devs.</p>
+      <h2>語法</h2>
+      <p>語法源自於 Ruby，這使得我們能夠更自然的閱讀及撰寫 Crystal，且對於有經驗的 Ruby 開發者們在學習曲線上更有助益。</p>
       <div class='code_section'>
         {% include sample_server.md %}
       </div>
-      <p class="read-more"><a href="http://tw.crystal-lang.org/docs/overview/">Start learning Crystal with the Language Reference</a></p>
+      <p class="read-more"><a href="http://tw.crystal-lang.org/docs/overview/">&gt; 現在就跟著入門文件學習如何撰寫 Crystal</a></p>
     </div>
   </div>
 
   <div class="row">
     <div class="col s12">
-      <h2>Compiled</h2>
-      <p>Crystal is a compiled language, allowing it to run blazingly fast with a very low memory footprint. It relies on LLVM for emitting native code, thus making use of all the optimisations built into the toolchain.</p>
-      <h3>Web server throughput<hr class="squares"/></h3>
+      <h2>編譯式</h2>
+      <p>Crystal 是一個需要經過編譯的語言，這讓它可以以低成本的記憶體來執行飛快的程式。 並以 LLVM 為基石可以使 Crystal 在建置過程中進行最佳化。</p>
+      <h3>網頁伺服器吞吐量比較<hr class="squares"/></h3>
       <p id="benchmark"></p>
-      <p class="read-more">Source: <a href="https://github.com/costajob/app-servers#results" target="_blank">costajobs/app-servers</a><br />
-      <a href="http://tw.crystal-lang.org/docs/using_the_compiler/">Learn how to use the compiler</a></p>
+      <p class="read-more">資料來源: <a href="https://github.com/costajob/app-servers#results" target="_blank">costajobs/app-servers</a><br />
+      <a href="http://tw.crystal-lang.org/docs/using_the_compiler/">&gt; 學習如何使用 Crystal 編譯器</a></p>
     </div>
   </div>
 
   <div class="row">
     <div class="col s12">
-      <h2>Type system</h2>
-      <p>Crystal is statically type checked, so any type errors will be caught early by the compiler rather than fail on runtime. Moreover, and to keep the language clean, Crystal has built-in type inference, so most type annotations are unneeded.</p>
+      <h2>型別系統</h2>
+      <p>Crystal 使用了靜態型別檢查，所有的型別錯誤都會在編譯時期被捕捉，而不是在執行時期才進行檢查。 另外，為了保持語言的純淨度，Crystal 還內建了型別推導的能力，在大部分的情況下，我們不需要自行宣告型別類型。</p>
       <div class="code_section">
         {% include sample_type_system.md %}
       </div>
-      <p class="read-more"><a href="http://tw.crystal-lang.org/docs/syntax_and_semantics/types_and_methods.html">Read more about Crystal's type system</a></p>
+      <p class="read-more"><a href="http://tw.crystal-lang.org/docs/syntax_and_semantics/types_and_methods.html">&gt; 閱讀更多關於 Crystal 型別系統的資訊</a></p>
     </div>
   </div>
 
   <div class="row">
     <div class="col s12">
-      <h2>Null reference checks</h2>
-      <p>All types are non-nilable in Crystal, and nilable variables are represented as an union between the type and nil. As a consequence, the compiler will automatically check for null references in compile time, helping prevent the dreadful <a href="https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare" target="_blank">billion-dollar mistake</a>.</p>
+      <h2>空參照自動檢查</h2>
+      <p>在 Crystal 裡的所有型別都是非空的，所有允許空值的變數都被宣告成預期型別與空值型別的集合型別。 因此，編譯器會在編譯時期自動地檢查空參照來避免著名的「<a href="https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare" target="_blank">The Billion Dollar Mistake 問題</a>」。</p>
       <div class="code_section">
         {% include sample_null.md %}
       </div>
-      <p>Running the previous file:</p>
+      <p>執行結果如下：</p>
       <div class="code_section">
       <figure class="highlight console">
         {% include sample_null_refs.html %}
@@ -68,48 +69,49 @@ custom_body_classes:
 
   <div class="row">
     <div class="col s12">
-      <h2>Macros</h2>
-      <p>Crystal’s answer to metaprogramming is a powerful macro system, which ranges from basic templating and AST inspection, to types inspection and running arbitrary external programs.</p>
+      <h2>巨集</h2>
+			<p>針對 Metaprogramming，Crystal 亦內建了強大的巨集機制來實現模板機制以及在編譯時期檢閱 AST 與型別的功能，甚至於能夠在巨集中執行獨立的外部程式。</p>
       <div class="code_section">
         {% include sample_macros.md %}
       </div>
-      <p class="read-more"><a href="http://tw.crystal-lang.org/docs/syntax_and_semantics/macros.html">Read more about macros</a></p>
+      <p class="read-more"><a href="http://tw.crystal-lang.org/docs/syntax_and_semantics/macros.html">&gt; 瞭解更多關於巨集的說明</a></p>
     </div>
   </div>
 
   <div class="row">
     <div class="col s12">
-      <h2>Concurrency Model</h2>
-      <p>Crystal uses green threads, called fibers, to achieve concurrency. Fibers communicate with each other using channels, as in Go or Clojure, without having to turn to shared memory or locks. </p>
+      <h2>併發模型</h2>
+      <p>Crystal 使用了一種稱為 Fiber 的綠色執行緒來實作併發模型。 如同 Go 或 Clojure，Fiber 能夠透過使用 Channel 來互相溝通而避免使用 SHM 與鎖。</p>
       <div class="code_section">
         {% include sample_concurrency.md %}
       </div>
-      <p class="read-more"><a href="http://tw.crystal-lang.org/docs/guides/concurrency.html">Read more about Crystal's concurrency model</a></p>
+      <p class="read-more"><a href="http://tw.crystal-lang.org/docs/guides/concurrency.html">&gt; 更多有關 Crystal 中併發模型的說明</a></p>
     </div>
   </div>
 
   <div class="row">
     <div class="col s12">
-      <h2>C-bindings</h2>
-      <p>Crystal has a dedicated syntax to easily call native libraries, eliminating the need to reimplement low-level tasks.</p>
+      <h2>C 函式庫綁紮</h2>
+      <p>Crystal 亦提供了簡單的語法來呼叫原生函式庫，如此一來我們便能減少在 Crystal 上重新實作的必要性。</p>
       <div class="code_section">
       {% include sample_bindings.md %}
       </div>
-      <p class="read-more"><a href="http://tw.crystal-lang.org/docs/syntax_and_semantics/c_bindings/">Learn how to bind to C libraries</a></p>
+      <p class="read-more"><a href="http://tw.crystal-lang.org/docs/syntax_and_semantics/c_bindings/">&gt; 瞭解如何與 C 函式庫互動</a></p>
     </div>
   </div>
 
   <div class="row">
     <div class="col s12">
-      <h2>Dependencies</h2>
-      <p>Crystal libraries are packed as Shards, and distributed via Git without needing a centralised repository. Built in commands allow dependencies to be easily specified through a YAML file and fetched from their respective repositories.</p>
+      <h2>相依性</h2>
+      <p>我們稱 Crystal 函式庫為 Shards，不同於常見的套件管理機制，Shards 避免了中心化管理而是透過 Git 來派送。 透過內建的指令我們可以輕易地透過編輯 YAML 格式的設定檔來描述套件之間的相依並從各自的倉庫抓取套件。</p>
       <div class="code_section">
       {% include sample_dependencies.md %}
       </div>
-      <p class="read-more"><a href="https://github.com/crystal-lang/shards">Read more about Shards in the repo</a></p>
+      <p class="read-more"><a href="https://github.com/crystal-lang/shards">&gt; 參閱 Shards 的 GitHub 頁面以瞭解更多</a></p>
     </div>
   </div>
 
+	<!--
   <div class="row center">
     <div class="col s12">
       <div class="flag">
@@ -136,8 +138,17 @@ custom_body_classes:
         </a>
       </div>
     </div>
-  </div>
+	</div>
   <hr class="fullwidth">
+	-->
+  <div class="row center">
+    <div class="col s12">
+      <div class="flag">
+        <h3>以下資訊若未即時更新請至</h3>
+        <a href="https://crystal-lang.org">原文網站</a>
+      </div>
+    </div>
+  </div>
   <div class="row">
     <div class="col s12">
       <h2>Articles from our blog</h2>
@@ -172,8 +183,8 @@ custom_body_classes:
   <div class="row center">
     <div class="col s12">
       <div class="flag">
-        <h3>Community channels</h3>
-        <a href="/community">Show all</a>
+				<h3>社群資源</h3>
+        <a href="/community">更多……</a>
       </div>
     </div>
   </div>
@@ -181,30 +192,44 @@ custom_body_classes:
   <div class="row">
     <div class="col s12">
       <div class='row community-list center'>
+        <div class="col s12 m12 l6">
+          <a href='https://github.com/crystal-tw/crystal-tw.github.io' target='_blank' class="item">
+            <span class="small">正體中文（臺灣）翻譯計劃</span>
+            <i class="extra-icons github"></i>
+            <span class="with_icon">crystal-tw/crystal-tw.github.io</span>
+          </a>
+        </div>
+        <div class="col s12 m12 l6">
+          <a href='https://gitter.im/crystal-tw/crystal-tw.github.io' target='_blank' class="item">
+            <span class="small">Crystal-TW 聊天室</span>
+            <i class="extra-icons gitter"></i>
+            <span class="with_icon">crystal-tw/crystal-tw.github.io</span>
+          </a>
+        </div>
         <div class="col s12 m12 l3">
           <a href='https://github.com/crystal-lang/crystal/' target='_blank' class="item">
-            <span class="small">Code repository</span>
+            <span class="small">程式碼倉庫</span>
             <i class="extra-icons github"></i>
             <span class="with_icon">crystal-lang/crystal</span>
           </a>
         </div>
         <div class="col s12 m12 l3">
           <a href='https://groups.google.com/forum/#!forum/crystal-lang' target='_blank' class="item">
-            <span class="small">General discussion</span>
+            <span class="small">討論區 [英]</span>
             <i class="extra-icons google"></i>
             <span class="with_icon">crystal-lang</span>
           </a>
         </div>
         <div class="col s12 m12 l3">
           <a href='https://gitter.im/crystal-lang/crystal' target='_blank' class="item">
-            <span class="small">Chat room</span>
+            <span class="small">聊天室 [英]</span>
             <i class="extra-icons gitter"></i>
             <span class="with_icon">crystal-lang/crystal</span>
           </a>
         </div>
         <div class="col s12 m12 l3">
           <a href='https://twitter.com/CrystalLanguage' target='_blank' class="item">
-            <span class="small">General announcements and events</span>
+            <span class="small">官方動態更新 [英]</span>
             <i class="extra-icons twitter"></i>
             <span class="with_icon">@CrystalLanguage</span>
           </a>
